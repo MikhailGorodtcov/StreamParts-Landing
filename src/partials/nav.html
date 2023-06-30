@@ -30,75 +30,57 @@
 
     </a>
     <div class="flex">
-      <nav class="flex flex-col self-center xl:flex-row content-center">
+      <nav class="flex flex-row self-center xl:flex-row content-center">
         <div id="menu-burger" class="self-center block xl:hidden">
           <span></span>
           <span></span>
           <span></span>
         </div>
         <ul id="menu" class="flex
-                  flex-col
+                  flex-row
                   xl:flex-row
                   items-center
                   px-6
-                  py-2
                   rounded-lg
                   xl:rounded-full
                   bg-white
                   text-black
-                  text-xl
-                  font-semibold
+                  text-sm
+                  font-normal
                   absolute
                   xl:relative
                   z-10
                   right-0
-                  top-[70px]
-                  sm:top-[80px]
                   xl:top-auto
                   invisible
                   xl:visible
                   w-full">
-          <li
-            class="px-5 py-2 relative after:content-[''] xl:after:content-['|'] after:absolute after:right-0 after:top-2 after:font-light ">
-            <a href="{{ link1.url }}"
-              class="inline-block text-center hover:decoration-1 hover:underline hover:underline-offset-8">
+          <li class="px-5 py-2 relative">
+            <a href="{{ link1.url }}" class="inline-block text-center">
               {{ link1.text }}
             </a>
           </li>
-          <li
-            class="px-5 py-2 relative after:content-[''] xl:after:content-['|'] after:absolute after:right-0 after:top-2 after:font-light">
-            <a href="{{ link2.url }}" data-scroll-to="applications"
-              class="inline-block text-center hover:decoration-1 hover:underline hover:underline-offset-8">
+          <li class="px-5 py-2 relative">
+            <a href="{{ link2.url }}" data-scroll-to="applications" class="inline-block text-center">
               {{ link2.text }}
             </a>
           </li>
           <li
-            class="px-5 py-2 relative after:content-[''] xl:after:content-['|'] after:absolute after:right-0 after:top-2 after:font-light">
-            <a href="{{ link3.url }}"
-              class="inline-block text-center hover:decoration-1 hover:underline hover:underline-offset-8">
+            class="px-5 py-2 relative xl:after:content-['|'] border-right: 3px solid after:absolute after:right-0 after:top-1 after:font-light">
+            <a href=" {{ link3.url }}" class="inline-block text-center">
               {{ link3.text }}
             </a>
           </li>
-          <li
-            class="px-5 py-2 relative after:content-[''] xl:after:content-['|'] after:absolute after:right-0 after:top-2 after:font-light">
-            <a href="{{ link4.url }}"
-              class="inline-block text-center hover:decoration-1 hover:underline hover:underline-offset-8">
+          <li class="px-5 py-2 relative">
+            <a href="{{ link4.url }}" class="inline-block text-center">
               {{ link4.text }}
             </a>
           </li>
-          <li
-            class="px-5 py-2 relative after:content-[''] xl:after:content-['|'] after:absolute after:right-0 after:top-2 after:font-light">
-            <a href="{{ link5.url }}"
-              class="inline-block text-center hover:decoration-1 hover:underline hover:underline-offset-8">
+          <button class="px-5 py-2 relative rounded-xl bg-blue text-white">
+            <a href="{{ link5.url }}" class="inline-block text-center rounded-xl">
               {{ link5.text }}
             </a>
-          </li>
-          <li class="px-5 py-2 xl:py-0">
-            <a href="{{ link6.url }}"
-              class="inline-block text-center hover:decoration-1 hover:underline hover:underline-offset-8">
-              {{ link6.text }}
-            </a>
-          </li>
+          </button>
           <!--<li class="flex items-center self-center font-medium text-white  bg-dark rounded-full">
             <a href="#" class="block pl-4 pr-1 py-1 hover:text-blue {{ enActiveClass }}">EN</a>
             |
