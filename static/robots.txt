@@ -1,0 +1,7 @@
+User-agent: *
+Sitemap: https://test.org/sitemap.xml
+Allow: /$
+Disallow: /
+Disallow: *?*
+
+Host: test.org
