@@ -9,7 +9,7 @@ module.exports = {
       white: "#fff",
       dark: "#1e1e1e",
       blue: "#0087EF",
-      gray: "#A4A4A4",
+      gray: "#EDEDED",
       orange: "#ff4f32"
     },
     screens: {

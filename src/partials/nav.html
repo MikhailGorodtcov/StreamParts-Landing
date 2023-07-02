@@ -1,4 +1,4 @@
-<div class="header container mx-auto px-4 md:px-8 mt-8">
+<div class="container mx-auto px-4 pb-3.5 md:px-8 mt-8 border border-b-gray border-r-0 border-t-0 border-l-0">
   <div class="flex justify-between content-center relative">
     <a href="/" class="w-[160px] md:w-[20.45px] xl:w-[310px] py-2">
       <svg width="160" height="21" viewBox="0 0 160 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,8 @@
 
     </a>
     <div class="flex">
-      <nav class="nav flex flex-row self-center xl:flex-row content-center">
+      <nav
+        class="nav flex flex-row self-center xl:flex-row content-center border border-r-gray border-b-0 border-t-0 border-l-0">
         <!-- <div id="menu-burger" class="self-center block xl:hidden">
           <span></span>
           <span></span>
@@ -73,9 +74,16 @@
         </ul>
       </nav>
       <div class="header-account flex flex-wrap px-6 self-center xl:flex-row content-center">
-        <img class="pl-3 cursor-pointer" src="/src/access1.svg" alt="">
-        <a href="{{ link4.url }}" class="inline-block text-center px-4 py-2 relative">
-          {{ link4.text }}
+        <!-- <img class="pl-3 cursor-pointer" src="/src/access1.svg" alt=""> -->
+        <a href="{{ link4.url }}"
+          class="hover:bg-blue-400 group flex items-center bg-blue-500 text-black text-sm font-regular pl-2 pr-4 py-2">
+          <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.15" width="16" height="16" rx="4" fill="#007BFF" />
+            <path
+              d="M11.3536 8.35355C11.5488 8.15829 11.5488 7.84171 11.3536 7.64645L8.17157 4.46447C7.97631 4.2692 7.65973 4.2692 7.46447 4.46447C7.2692 4.65973 7.2692 4.97631 7.46447 5.17157L10.2929 8L7.46447 10.8284C7.2692 11.0237 7.2692 11.3403 7.46447 11.5355C7.65973 11.7308 7.97631 11.7308 8.17157 11.5355L11.3536 8.35355ZM4 8.5L11 8.5L11 7.5L4 7.5L4 8.5Z"
+              fill="#007BFF" />
+          </svg>
+          Получить доступ
         </a>
         <button class="px-6 py-2 relative rounded-xl bg-blue text-white">
           <a href="{{ link5.url }}" class="inline-block text-center rounded-xl">
