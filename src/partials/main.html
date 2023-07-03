@@ -1,13 +1,26 @@
 <section class="container mx-auto px-4 md:px-8 relative mt-[50px] pb-16 sm:pb-[200px]">
   <div class="flex flex-col md:flex-row justify-between">
-    <p class="self-start w-full md:w-6/12 lg:w-4/12 border-l-4 pl-4 font-medium text-2xl md:text-3xl border-orange mb-16" data-aos="fade-right">
+    <p class="self-start w-full md:w-6/12 lg:w-4/12  pl-4 font-medium text-5xl md:text-3xl" data-aos="fade-right">
       {{ text1 }}
     </p>
-    <div class="w-full md:w-6/12 lg:w-5/12 lg:mr-8 font-extralight text-2xl md:text-[28px]" data-aos="fade-left">
-      <p class="mb-3">
-        {{ text2 }}
-      </p>
-      <p>{{ text3 }}</p>
-    </div>
+    <button class="py-2 mr-8 rounded-xl bg-blue text-white">
+      <a href="{{ link2.url }}" class="inline-block text-center rounded-xl">
+        {{ link2.text }}
+      </a>
+    </button>
+    <a href="{{ link3.url }}"
+      class="group md:inline-block xs:hidden items-center text-black text-sm font-regular pl-2 pr-4 py-2">
+      <svg class="mr-2 md:inline-block xs:hidden items-center" width="16" height="16" viewBox="0 0 16 16" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect opacity="0.15" width="16" height="16" rx="4" fill="#007BFF" />
+        <path
+          d="M11.3536 8.35355C11.5488 8.15829 11.5488 7.84171 11.3536 7.64645L8.17157 4.46447C7.97631 4.2692 7.65973 4.2692 7.46447 4.46447C7.2692 4.65973 7.2692 4.97631 7.46447 5.17157L10.2929 8L7.46447 10.8284C7.2692 11.0237 7.2692 11.3403 7.46447 11.5355C7.65973 11.7308 7.97631 11.7308 8.17157 11.5355L11.3536 8.35355ZM4 8.5L11 8.5L11 7.5L4 7.5L4 8.5Z"
+          fill="#007BFF" />
+      </svg>
+      Получить доступ
+    </a>
+  </div>
+  <img alt="MacBook" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded required:"
+    src="/src/Img_1_screen.jpg">
   </div>
 </section>

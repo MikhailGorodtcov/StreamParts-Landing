@@ -30,19 +30,26 @@
 
     </a>
     <div class="flex">
-      <nav
-        class="nav flex flex-row self-center xl:flex-row content-center border border-r-gray border-b-0 border-t-0 border-l-0">
-        <!-- <div id="menu-burger" class="self-center block xl:hidden">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div> -->
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <div id="menu-burger" class="flex items-center space-x-6 xl:hidden">
+          <button class="p-1 xs:ml-40 rounded-md focus:outline-none">
+            <svg class="w-6 h-6 text-gray-700 dark:text-gray-300" width="26" height="26" viewBox="0 0 26 26" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.99609 6.99777H22.0036" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M18.0019 13.0002H3.99609" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M3.99609 19.0026H14.0003" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
         <ul id="menu" class="flex
                   flex-row
                   xl:flex-row
+                  xs:flex-col
                   items-center
                   px-6
-                  rounded-lg
                   xl:rounded-full
                   bg-white
                   text-black
@@ -50,12 +57,12 @@
                   font-normal
                   absolute
                   xl:relative
-                  z-10
+                  xs:z-20
                   right-0
                   xl:top-auto
                   invisible
                   xl:visible
-                  w-full">
+                  ">
           <li class="px-5 py-2 relative">
             <a href="{{ link1.url }}" class="inline-block text-center">
               {{ link1.text }}
@@ -66,18 +73,13 @@
               {{ link2.text }}
             </a>
           </li>
-          <li class="px-5 py-2 relative">
-            <a href=" {{ link3.url }}" class="inline-block text-center">
-              {{ link3.text }}
-            </a>
-          </li>
         </ul>
       </nav>
-      <div class="header-account flex flex-wrap px-6 self-center xl:flex-row content-center">
-        <!-- <img class="pl-3 cursor-pointer" src="/src/access1.svg" alt=""> -->
-        <a href="{{ link4.url }}"
-          class="hover:bg-blue-400 group flex items-center bg-blue-500 text-black text-sm font-regular pl-2 pr-4 py-2">
-          <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="flex flex-wrap px-6 self-center xl:flex-row content-center xs:self-right">
+        <a href="{{ link3.url }}"
+          class="group md:inline-block xs:hidden items-center text-black text-sm font-regular pl-2 pr-4 py-2">
+          <svg class="mr-2 md:inline-block xs:hidden items-center" width="16" height="16" viewBox="0 0 16 16"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect opacity="0.15" width="16" height="16" rx="4" fill="#007BFF" />
             <path
               d="M11.3536 8.35355C11.5488 8.15829 11.5488 7.84171 11.3536 7.64645L8.17157 4.46447C7.97631 4.2692 7.65973 4.2692 7.46447 4.46447C7.2692 4.65973 7.2692 4.97631 7.46447 5.17157L10.2929 8L7.46447 10.8284C7.2692 11.0237 7.2692 11.3403 7.46447 11.5355C7.65973 11.7308 7.97631 11.7308 8.17157 11.5355L11.3536 8.35355ZM4 8.5L11 8.5L11 7.5L4 7.5L4 8.5Z"
@@ -85,9 +87,9 @@
           </svg>
           Получить доступ
         </a>
-        <button class="px-6 py-2 relative rounded-xl bg-blue text-white">
-          <a href="{{ link5.url }}" class="inline-block text-center rounded-xl">
-            {{ link5.text }}
+        <button class="px-6 py-2 mr-8 rounded-xl bg-blue text-white">
+          <a href="{{ link4.url }}" class="inline-block text-center rounded-xl">
+            {{ link4.text }}
           </a>
         </button>
       </div>
