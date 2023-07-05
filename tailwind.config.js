@@ -3,6 +3,13 @@ module.exports = {
     "./src/**/*.{html,js}",
   ],
   theme: {
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman',
+    },
     colors: {
       transparent: "transparent",
       black: "#000",
@@ -11,10 +18,12 @@ module.exports = {
       blue: "#0087EF",
       gray: "#EDEDED",
       orange: "#ff4f32",
-      regalblue: '#007BFF0D'
+      regalblue: '#007BFF0D',
+      darkSecondary: '#272937',
+      markerOrange: '#FF5C00',
     },
     weights: {
-      maxWidth: "40rem"
+      maxWidth: "40rem",
     },
     screens: {
       "3xs": "340px",
