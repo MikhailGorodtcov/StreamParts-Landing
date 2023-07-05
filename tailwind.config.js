@@ -10,7 +10,11 @@ module.exports = {
       dark: "#1e1e1e",
       blue: "#0087EF",
       gray: "#EDEDED",
-      orange: "#ff4f32"
+      orange: "#ff4f32",
+      regalblue: '#007BFF0D'
+    },
+    weights: {
+      maxWidth: "40rem"
     },
     screens: {
       "3xs": "340px",
