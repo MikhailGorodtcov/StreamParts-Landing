@@ -1,6 +1,6 @@
-<div class="container mx-auto mt-8 border border-b-gray border-r-0 border-t-0 border-l-0">
-  <div class="flex 2xl justify-between content-center pb-4">
-    <a href="/" class="w-[160px] md:w-[140px] sm:w-[140px] py-2">
+<div class="container mx-auto mt-4 border border-b-gray border-r-0 border-t-0 border-l-0">
+  <div class="flex justify-between content-center pb-4">
+    <a href="/" class="w-[160px] lg:w-[140px] md:w-[140px] py-2">
       <svg width="160" height="21" viewBox="0 0 160 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M7.67255 16.3929C6.06933 16.3929 4.69514 16.0334 3.54999 15.3144C2.40483 14.5954 1.52688 13.6176 0.916126 12.3809C0.305375 11.1443 0 9.74944 0 8.19643C0 6.62425 0.314918 5.21983 0.944755 3.98318C1.58413 2.74652 2.48117 1.7735 3.63587 1.0641C4.79057 0.3547 6.15522 0 7.72981 0C9.55252 0 11.0794 0.464944 12.3104 1.39483C13.551 2.31513 14.3431 3.57575 14.6866 5.17669L10.7931 6.21203C10.5641 5.40677 10.1633 4.77885 9.59069 4.32829C9.02766 3.87773 8.38828 3.65244 7.67255 3.65244C6.85186 3.65244 6.17908 3.85376 5.65421 4.25639C5.12935 4.64944 4.74286 5.19107 4.49474 5.8813C4.24662 6.56194 4.12257 7.33365 4.12257 8.19643C4.12257 9.54812 4.4184 10.6458 5.01006 11.4894C5.61127 12.3234 6.49877 12.7404 7.67255 12.7404C8.55051 12.7404 9.21852 12.5391 9.67658 12.1365C10.1346 11.7338 10.4782 11.1586 10.7072 10.4109L14.6866 11.2449C14.2477 12.8938 13.4174 14.164 12.1959 15.0555C10.9744 15.9471 9.46663 16.3929 7.67255 16.3929Z"
@@ -28,52 +28,22 @@
           fill="#FB5801" />
       </svg>
     </a>
-    <div class="flex">
-      <nav class="menu ml-auto xs:ml-40 md:ml-80 flex flex-wrap items-center text-base justify-center">
-        <div id="menu-burger" class="flex items-center space-x-6 xl:hidden">
-          <button class="p-1 z-20 xs:ml-40 md:ml-80 rounded-md focus:outline-none">
-            <svg class="w-6 h-6 text-gray-700 dark:text-gray-300" width="26" height="26" viewBox="0 0 26 26" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.99609 6.99777H22.0036" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M18.0019 13.0002H3.99609" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M3.99609 19.0026H14.0003" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
-        <ul id="menu" class="flex
-                  flex-row
-                  xl:flex-row
-                  xs:flex-col
-                  items-center
-                  xl:rounded-full
-                  bg-white
-                  text-black
-                  text-sm
-                  font-normal
-                  absolute
-                  xl:relative
-                  xs:z-20
-                  right-0
-                  xl:top-auto
-                  invisible
-                  xl:visible
-                  ">
-          <li class="px-5 py-2 relative">
+    <div class="p-1 flex justify-between">
+      <nav class="flex flex-wrap mx-auto text-base gap-x-3">
+        <ul id="menu" class="flex flex-row gap-x-3 md:flex md:items-center">
+          <li class="px-5 py-2 group lg:inline-block md:hidden sm:hidden">
             <a href="{{ link1.url }}" class="inline-block text-center hover:text-orange">
               {{ link1.text }}
             </a>
           </li>
-          <li class="px-5 py-2 relative">
-            <a href="{{ link2.url }}" data-scroll-to="applications" class="inline-block text-center">
+          <li
+            class="px-5 py-2 lg:inline-block md:hidden sm:hidden border border-r-gray border-b-0 border-t-0 border-l-0">
+            <a href="{{ link2.url }}" data-scroll-to="applications" class="inline-block text-center hover:text-orange">
               {{ link2.text }}
             </a>
           </li>
+          <li>
         </ul>
-      </nav>
-      <div class="flex flex-wrap self-center xl:flex-row justify-center content-center xs:self-right">
         <a href="{{ link3.url }}"
           class="group md:inline-block xs:hidden items-center text-black text-sm font-regular pl-2 pr-4 py-2">
           <svg class="mr-2 md:inline-block xs:hidden items-center" width="16" height="16" viewBox="0 0 16 16"
@@ -85,17 +55,27 @@
           </svg>
           Получить доступ
         </a>
-        <button class="px-6 py-2 mr-8 rounded-xl bg-blue text-white">
+        </li>
+        <button class="px-6 py-2 rounded-xl bg-blue text-white">
           <a href="{{ link4.url }}" class="inline-block text-center rounded-xl">
             {{ link4.text }}
           </a>
         </button>
-      </div>
-      <!--<li class="flex items-center self-center font-medium text-white  bg-dark rounded-full">
-            <a href="#" class="block pl-4 pr-1 py-1 hover:text-blue {{ enActiveClass }}">EN</a>
-            |
-            <a href="#" class="block pr-4 pl-1 py-1 hover:text-blue {{ cnActiveClass }}">CH</a>
-          </li>-->
+      </nav>
     </div>
   </div>
+  <div id="menu-burger" class="flex xl:hidden">
+    <button class="p-1 rounded-md focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700 dark:text-gray-300" width="26" height="26" viewBox="0 0 26 26" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.99609 6.99777H22.0036" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M18.0019 13.0002H3.99609" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M3.99609 19.0026H14.0003" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+</div>
 </div>
