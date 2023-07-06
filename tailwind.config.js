@@ -21,6 +21,8 @@ module.exports = {
       regalblue: '#007BFF0D',
       darkSecondary: '#272937',
       markerOrange: '#FF5C00',
+      markerBlue: '#007BFF',
+      bordertabs: '#E6E6E6',
     },
     weights: {
       maxWidth: "40rem",
