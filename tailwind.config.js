@@ -23,6 +23,7 @@ module.exports = {
       markerOrange: '#FF5C00',
       markerBlue: '#007BFF',
       bordertabs: '#E6E6E6',
+      footerborder: '#262626',
     },
     weights: {
       maxWidth: "40rem",
