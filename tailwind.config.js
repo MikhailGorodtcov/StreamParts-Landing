@@ -24,6 +24,7 @@ module.exports = {
       markerBlue: '#007BFF',
       bordertabs: '#E6E6E6',
       footerborder: '#262626',
+      dgWhite: '#E6E6E6',
     },
     weights: {
       maxWidth: "40rem",
