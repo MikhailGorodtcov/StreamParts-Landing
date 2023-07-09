@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",
+    './src/**/*.{html,js}',
   ],
   theme: {
     listStyleType: {
@@ -11,13 +11,13 @@ module.exports = {
       roman: 'upper-roman',
     },
     colors: {
-      transparent: "transparent",
+      transparent: 'transparent',
       black: "#000",
       white: "#fff",
-      dark: "#1e1e1e",
-      blue: "#0087EF",
-      gray: "#EDEDED",
-      orange: "#ff4f32",
+      dark: '#1e1e1e',
+      blue: '#0087EF',
+      gray: '#EDEDED',
+      orange: '#ff4f32',
       regalblue: '#007BFF0D',
       darkSecondary: '#272937',
       markerOrange: '#FF5C00',
@@ -27,22 +27,27 @@ module.exports = {
       dgWhite: '#E6E6E6',
     },
     weights: {
-      maxWidth: "40rem",
+      maxWidth: '40rem',
     },
-    screens: {
-      "3xs": "340px",
-      "2xs": "380px",
-      "xs": "480px",
-      "sm": "640px",
-      "md": "768px",
-      "lg": "1024px",
-      "xl": "1280px",
-      "2xl": "1440px",
-      "3xl": "1600px",
+    extend: {
+      spacing: {
+        'mx': '220px',
+        'mxlg': '202px'
+      },
+      screens: {
+        '3xs': '340px',
+        '2xs': '380px',
+        'xs': '480px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1440px',
+        '3xl': '1600px',
+      },
     },
-    extend: {},
     fontFamily: {
-      "body": ["Kumbh Sans", "sans-serif"],
+      'body': ['Inter', 'sans-serif'],
     },
   }
 }

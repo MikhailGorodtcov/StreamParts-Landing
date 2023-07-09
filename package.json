@@ -4,10 +4,10 @@
   "description": "streamparts-landing",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
-    "dev:parcel": "parcel ./src/404.html  ./src/index.html --open",
+    "dev:parcel": "parcel  ./src/index.html --open",
     "dev:css": "tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --watch",
     "build": "npm-run-all build:css build:parcel",
-    "build:parcel": "parcel build ./src/404.html ./src/index.html",
+    "build:parcel": "parcel build  ./src/index.html",
     "build:css": "tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
