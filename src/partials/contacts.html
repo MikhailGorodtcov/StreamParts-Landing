@@ -79,3 +79,118 @@
     </div>
   </div>
 </footer> -->
+<!-- <div id="registration" aria-hidden="false" class="modal micromodal-slide bg-white is-open">
+<div tabindex="-1" data-micromodal-close="" class="modal__overlay z-50">
+  <div role="dialog" aria-modal="true" aria-labelledby="registration-title"
+    class="max-w-5xl w-full bg-white overflow-y-auto max-h-screen">
+    <header class="flex justify-between items-center py-6 px-8 border-black border-b border-opacity-20 relative">
+      <div id="registration-title" class="font-extrabold text-3xl">
+        Регистрация
+      </div>
+      <div class="mr-12 hidden md:block"><span class="text-orange text-3xl align-middle mr-3 -mt-1 leading-7">*</span>
+        <span class="opacity-40 text-sm align-middle leading-7">Поля, обязательные для заполнения</span>
+      </div> <button aria-label="Close modal" class="absolute top-5 right-8"><svg xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg></button>
+    </header>
+    <div id="registration-content" class="py-6 px-8">
+      <form class="grid auto-cols-max grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 sm:gap-x-8">
+        <div class="form-group"><label for="company-name"><span class="label-text">Название
+              компании</span> <span class="label-sign">*</span> <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor"
+              data-tippy-content="Компания, группа компаний, бренд, товарный знак"
+              class="tooltip-icon align-middle ml-1 h-5 w-5">
+              <path fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"></path>
+            </svg></label> <input type="text" id="company-name" aria-describedby="company-name"
+            placeholder="Введите название компании" class="form-control"></div>
+        <div class="form-group"><label for="company-type"><span class="label-text">Тип компании</span>
+            <span class="label-sign">*</span></label>
+          <div class="select-dropdown"><select id="company-type" class="form-control">
+              <option value="">Выберите тип компании</option>
+              <option value="1">Производство</option>
+              <option value="2">Разработчик</option>
+              <option value="3">Реселлер</option>
+              <option value="20">Прочее</option>
+            </select></div>
+        </div>
+        <div class="form-group md:col-span-2 lg:col-span-1"><label for="company-site"><span class="label-text">Сайт
+              компании</span></label> <input type="text" id="company-site" aria-describedby="last-name"
+            placeholder="Введите сайт компании" class="form-control">
+
+        </div>
+        <div class="form-group"><label for="counterparty-legal-short-name"><span class="label-text">ИНН
+              юридического лица</span> <span class="label-sign">*</span> <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor"
+              data-tippy-content="В адрес этого юридического лица мы будем выставлять счета и отгружать товар"
+              class="tooltip-icon align-middle ml-1 h-5 w-5">
+              <path fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"></path>
+            </svg></label>
+          <div class="vue-simple-suggest designed">
+            <div role="combobox" aria-haspopup="listbox" aria-owns="1-suggestions" aria-expanded="false"
+              class="input-wrapper"><input type="text" id="counterparty-legal-short-name"
+                aria-describedby="counterparty-legal-short-name" placeholder="Введите ИНН" class="form-control"
+                aria-activedescendant="" aria-autocomplete="list" aria-controls="1-suggestions"></div>
+          </div>
+        </div>
+        <div class="form-group"><label for="counterparty-document_flow_type"><span class="label-text">Тип
+              документооборота</span></label>
+          <div class="select-dropdown"><select id="counterparty-document_flow_type" class="form-control">
+              <option value="1">Бумажный</option>
+              <option value="2">Электронный</option>
+            </select></div>
+        </div>
+        <div class="form-group md:col-span-2 lg:col-span-1"><label for="counterparty-name"><span
+              class="label-text">Название
+              юридического лица</span></label> <input type="text" id="counterparty-name" aria-describedby="first-name"
+            disabled="disabled" class="form-control"></div>
+        <div class="form-group"><label for="full_name-name"><span class="label-text">Имя и фамилия
+              пользователя</span> <span class="label-sign">*</span></label> <input type="text" id="full_name-name"
+            aria-describedby="first-name" placeholder="Введите имя и фамилию" class="form-control"></div>
+        <div class="form-group"><label for="user-role_type"><span class="label-text">Роль в
+              компании</span></label>
+          <div class="select-dropdown"><select id="user-role_type" class="form-control">
+              <option value="">Выберите роль в компании</option>
+              <option value="1">Инженер</option>
+              <option value="2">Закупщик</option>
+              <option value="3">Продажник</option>
+              <option value="4">Аналитик</option>
+              <option value="5">Руководитель</option>
+              <option value="20">Прочее</option>
+            </select></div>
+        </div>
+        <div class="form-group md:col-span-2 lg:col-span-1"><label for="email"><span class="label-text">E-mail</span>
+            <span class="label-sign">*</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+              fill="currentColor"
+              data-tippy-content="Данная электронная почта будет приявязана к аккаунту в Streamparts"
+              class="tooltip-icon align-middle ml-1 h-5 w-5">
+              <path fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"></path>
+            </svg></label> <input type="email" id="email" aria-describedby="email" placeholder="Введите E-mail"
+            class="form-control"></div>
+        <div class="form-group md:col-span-2 lg:col-span-3 flex flex-col-reverse md:flex-row items-center">
+          <button disabled="disabled" type="submit" class="btn btn-orange mr-0 md:mr-7 w-[210px]">
+            Отправить
+          </button>
+          <div class="mb-6 md:mb-0">
+            <div class="opacity-50 text-sm">Отправляя данную форму, Вы подверждаете, что
+              согласны с:
+            </div>
+            <div class="font-semibold"><a href="https://app.streamparts.ru/terms-of-service"
+                class="text-blue hover:underline">Правилами сайта</a>
+              и
+              <a href="https://app.streamparts.ru/privacy-policy" class="text-blue hover:underline">политикой
+                обработки данных</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>

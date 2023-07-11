@@ -1,6 +1,7 @@
-<header class="container mx-auto py-3 lg:py-4 border border-b-gray border-r-0 border-t-0 border-l-0">
-  <div class="flex flex-wrap justify-between items-center">
-    <a href="/" class="items-center">
+<!-- <header
+  class="2xl:container 2xl:mx-auto container mx-7 px-4 py-3 border border-b-gray border-r-0 border-t-0 border-l-0">
+  <div class="md:flex justify-between items-center">
+    <a href="/" class="items-center w-[160px] md:[140px ]">
       <svg width="160" height="21" viewBox="0 0 160 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M7.67255 16.3929C6.06933 16.3929 4.69514 16.0334 3.54999 15.3144C2.40483 14.5954 1.52688 13.6176 0.916126 12.3809C0.305375 11.1443 0 9.74944 0 8.19643C0 6.62425 0.314918 5.21983 0.944755 3.98318C1.58413 2.74652 2.48117 1.7735 3.63587 1.0641C4.79057 0.3547 6.15522 0 7.72981 0C9.55252 0 11.0794 0.464944 12.3104 1.39483C13.551 2.31513 14.3431 3.57575 14.6866 5.17669L10.7931 6.21203C10.5641 5.40677 10.1633 4.77885 9.59069 4.32829C9.02766 3.87773 8.38828 3.65244 7.67255 3.65244C6.85186 3.65244 6.17908 3.85376 5.65421 4.25639C5.12935 4.64944 4.74286 5.19107 4.49474 5.8813C4.24662 6.56194 4.12257 7.33365 4.12257 8.19643C4.12257 9.54812 4.4184 10.6458 5.01006 11.4894C5.61127 12.3234 6.49877 12.7404 7.67255 12.7404C8.55051 12.7404 9.21852 12.5391 9.67658 12.1365C10.1346 11.7338 10.4782 11.1586 10.7072 10.4109L14.6866 11.2449C14.2477 12.8938 13.4174 14.164 12.1959 15.0555C10.9744 15.9471 9.46663 16.3929 7.67255 16.3929Z"
@@ -28,18 +29,18 @@
           fill="#FB5801" />
       </svg>
     </a>
-    <div class="flex flex-wrap 2xl:justify-between space-x-5 2lx:space-x-5 outline-none">
-      <div id="menu" class="flex flex-row">
-        <a href="{{ link1.url }}"
-          class="px-5 py-2 3xl:inline-block 2xl:hidden lg:hidden md:hidden text-center text hover:text-orange">
+    <div class="md:flex justify-between outline-none">
+      <div id="menu" class="md:flex flex-row">
+        <a href="{{ link1.url }}" class="px-5 py-2 hidden xl:inline-block text-center text hover:text-orange">
           {{ link1.text }}
         </a>
         <a href="{{ link2.url }}"
-          class="px-5 py-2 3xl:inline-block 2xl:hidden lg:hidden md:hidden text-center hover:text-orange">
+          class="px-5 py-2 hidden xl:inline-block text-center hover:text-orange border border-r-gray border-l-0 border-t-0 border-b-0">
           {{ link2.text }}
         </a>
-        <a href="{{ link3.url }}"
-          class="px-6 py-2 3xl:inline-block 2xl:inline-block lg:inline-block md:inline-block sm:hidden xs:hidden items-center text-black text-sm font-regular">
+        <a id="registration-title" href="{{ link3.url }}"
+          class="px-6 py-2 hidden sm:inline-block items-center text-black text-sm font-regular"
+          data-micromodal-trigger="registration">
           <svg class="inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect opacity="0.15" width="16" height="16" rx="4" fill="#007BFF" />
@@ -50,11 +51,11 @@
           Получить доступ
         </a>
         <a href="https://app.streamparts.ru/login"
-          class="inline-block text-center px-6 py-2 rounded-xl bg-blue text-white">
+          class="inline-block text-center px-3.5 py-2  2xl:max-sm:px-6 2xl:max-sm:py-2 rounded-3xl bg-blue text-white">
           Войти
         </a>
       </div>
-      <div id="menu-burger" class="2xl:hidden lg:inline-block ">
+      <div id="menu-burger" class="xl:hidden md:inline-block md:pl-4 md:pt-2">
         <button class="rounded-md">
           <svg class="text-gray-700 dark:text-gray-300 items-center p-0" width="26" height="26" viewBox="0 0 26 26"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,4 +71,4 @@
     </div>
   </div>
   </div>
-</header>
+</header> -->
