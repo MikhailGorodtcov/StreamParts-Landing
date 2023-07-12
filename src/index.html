@@ -1,38 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+<include src="src/partials/components/Head/head.html" locals='{"title":{"title": "Главная"}}'></include>
 
-<head>
-  <meta charset="utf-8">
-  <title>StreamParts</title>
-  <meta name="description" content="Test">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta property="og:title" content="Test">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:description" content="Test">
-  <link rel="stylesheet" href="../dist/css/index.css">
-</head>
-
-<body class="font-body text-dark mx-auto">
-
-
-  <include src="src/partials/nav.html" locals='{
-          "link1": {"text": "Главная", "url": "#home"},
-          "link2": {"text": "О компании", "url": "#about company"},
-          "link3": {"text": "Получить доступ", "url": "#access"},
-          "link4": {"text": "Войти", "url": "#enter"},
-          "enActiveClass": "text-white",
-          "cnActiveClass": ""
-      }'>
-  </include>
-  <include src="src/partials/main.html" locals='{
-          "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
-          "link2": {"text": "Войти", "url": "#enter"},
-          "link3": {"text": "Получить доступ", "url": "#access"}
-      }'>
-  </include>
-  <include src="src/partials/about.html" locals='{
-      }'>
+<body class="font-body text-dark">
+  <div class="max-w-[1220px] px-[30px] mx-auto">
+    <!-- тут мы импортируем header  в котором лежит nav ссылки -->
+    <include src="src/partials/components/Header/header.html"></include>
+    <include src="src/partials/main.html" locals='{
+            "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
+            "link2": {"text": "Войти", "url": "#enter"},
+            "link3": {"text": "Получить доступ", "url": "#access"}
+        }'>
+    </include>
+  </div>
+  <include src="src/partials/about.html" locals="{
+      }">
   </include>
   <include src="src/partials/applications.html" locals='{
           "heading": "Направление поставок",
@@ -55,14 +37,14 @@
           "text17": "Партнерские программы с представителями азиатских производителей в РФ"
       }'>
   </include>
-  <include src="src/partials/ecosystem.html" locals='{
+  <!-- <include src="src/partials/ecosystem.html" locals='{
           "heading": "Ecosystem",
           "text1": "An ecosystem to support the whole customer idea-to-product cycle:",
           "text2": "Technical sales rep company",
           "text3": "Design house and EMS-operator",
           "text4": "Supply chain company and e-commerce platform"
       }'>
-  </include>
+  </include> -->
   <!-- <include src="src/partials/aboutcompany.html" locals='{
           "heading": "Linecard"
       }'>
@@ -87,10 +69,10 @@
           "text16": "Knowledge base maintenance and development: block diagrams, product roadmaps, cross-references, technology insights"
       }'>
   </include> -->
-  <include src="src/partials/contacts.html" locals='{
+  <!-- <include src="src/partials/contacts.html" locals='{
 
       }'>
-  </include>
+  </include> -->
 
   <!-- <include src="src/partials/company.html" locals='{
 
@@ -100,3 +82,6 @@
 </body>
 
 </html> -->
+</body>
+
+</html>
