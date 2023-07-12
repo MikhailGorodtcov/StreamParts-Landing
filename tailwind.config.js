@@ -32,6 +32,13 @@ module.exports = {
         mx: "220px",
         mxlg: "202px",
       },
+      fontFamily: {
+        sans: [
+          'SF Pro Display',
+          'system-ui',
+          '-apple-system',
+        ],
+      },
       //   screens: {
       //     "3xs": "340px",
       //     "2xs": "380px",
@@ -53,7 +60,7 @@ module.exports = {
       arrow: 'url("/src/img/icon/arrown.svg")',
     },
     fontFamily: {
-      body: ["Inter", "sans-serif"],
+      body: ["Inter", "SF Pro Display", "sans-serif"],
     },
   },
 };

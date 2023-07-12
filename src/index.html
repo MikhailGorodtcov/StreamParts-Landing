@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-<include src="src/partials/components/Head/head.html" locals='{"title":{"title": "Главная"}}'></include>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../dist/css/index.css">
+</head>
 
 <body class="font-body text-dark">
+  <include src="src/partials/components/Head/head.html" locals='{"title":{"title": "Главная"}}'></include>
   <div class="max-w-[1220px] px-[30px] mx-auto">
     <!-- тут мы импортируем header  в котором лежит nav ссылки -->
     <include src="src/partials/components/Header/header.html"></include>
