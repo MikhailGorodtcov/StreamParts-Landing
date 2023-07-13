@@ -13,13 +13,13 @@
   <div class="max-w-[1220px] px-[30px] mx-auto">
     <!-- тут мы импортируем header  в котором лежит nav ссылки -->
     <include src="src/partials/components/Header/header.html"></include>
-    <include src="src/partials/main.html" locals='{
-            "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
-            "link2": {"text": "Войти", "url": "#enter"},
-            "link3": {"text": "Получить доступ", "url": "#access"}
-        }'>
-    </include>
   </div>
+  <include src="src/partials/main.html" locals='{
+    "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
+    "link2": {"text": "Войти", "url": "#enter"},
+    "link3": {"text": "Получить доступ", "url": "#access"}
+}'>
+  </include>
   <include src="src/partials/about.html" locals="{
       }">
   </include>
