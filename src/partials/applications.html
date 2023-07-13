@@ -1,33 +1,39 @@
-<section id="applications" class="2xl:container 2xl:mx-auto 2xl:py-32 container mx-7">
-  <div class="mb-12 mx-7 sm:mb-20 text-black text-5xl sm:text-7xl font-extralight text-left">
-    {{ heading }}
-    <h2 class="font-medium text-5xl pt-20 sm:text-3xl md:text-4xl">
-      <svg class="inline-block align-baseline" width="38" height="38" viewBox="0 0 38 38" transform="translate(130 1)"
-        fill="none" xmlns="http://www.w3.org/2000/svg">
+<section id="applications" class="max-w-[1220px] px-[30px] mx-auto mt-5">
+  <div
+    class="font-['SF Pro Display'] sm:mb-20 text-black text-[26px] lg:text-7xl font-normal text-left whitespace-nowrap">
+    Направления поставок
+    <h2 class="font-body text-left font-medium text-xl pt-10 sm:text-3xl md:text-4xl">
+      <svg class="inline-block" width="38" height="38" viewBox="0 0 38 38" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
         <circle opacity="0.2" cx="19" cy="19" r="19" fill="#007BFF" />
         <path d="M20.9041 11.4545V26H18.2692V14.0185H18.1839L14.782 16.1918V13.777L18.397 11.4545H20.9041Z"
           fill="#007BFF" />
       </svg>
       Свободный рынок
     </h2>
-    <p class="pt-8 text-darkSecondary text-normal text-left text-xs">Складские поставки дефицитных компонентов в
-      условиях санкций
+    <p class="pt-8 pb-7 text-darkSecondary text-base text-left font-body font-normal whitespace-normal">Складские
+      поставки
+      дефицитных компонентов в условиях санкций
     </p>
   </div>
-  <div class="flex flex-row  justify-between mx-7">
-    <ul role="list"
-      class="w-full md:w-1/2 list-outside  list-square marker:text-markerOrange text-left 2xl:pr-52 md:pr-7">
-      <li class="pb-5 text-base font-medium">{{ text1 }}</li>
-      <li class="pt-8 pb-8 text-base font-medium">{{ text2 }}</li>
-      <li class="pt-8 pb-8 text-base font-medium">{{ text3 }}</li>
-      <li class="pt-8 pb-8 text-base font-medium">{{ text4 }}</li>
-      <li class="pt-8 text-base font-medium">{{ text5 }}</li>
-    </ul>
-    <img src="/src/img/basket&globe.jpg" alt="Applications" class="w-full md:w-3/5">
+  <div class="flex md:flex-row flex-col-reverse  justify-between">
+    <div class="">
+      <ul role="list"
+        class="w-full p-6 font-['Inter'] text-dark  text-left list-outside list-square marker:text-markerOrange">
+        <li class="pb-6 text-sm font-medium">Складское наличие от категорий поставщиков: Производители, Глобальные и
+          региональные дистрибуторы, Реселлеры (Китайский производственный запас)</li>
+        <li class="pb-6 text-sm font-medium">{{ text2 }}</li>
+        <li class="pb-6 text-sm font-medium">{{ text3 }}</li>
+        <li class="pb-6 text-sm font-medium">{{ text4 }}</li>
+        <li class="text-sm font-medium">{{ text5 }}</li>
+      </ul>
+    </div>
+    <div>
+      <img src="/src/img/basket&globe.jpg" alt="Applications" class="w-full md:w-3/5">
+    </div>
   </div>
-  <h2 class="font-medium text-5xl sm:text-3xl md:text-4xl pt-20">
-    <svg class="inline-block align-baseline" width="38" height="38" viewBox="0 0 38 38" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+  <h2 class="font-body text-left font-medium text-xl pt-10 sm:text-3xl md:text-4xl">
+    <svg class="inline-block" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle opacity="0.2" cx="19" cy="19" r="19" fill="#007BFF" />
       <path
         d="M13.5817 26V24.0966L18.6314 19.1463C19.1143 18.6586 19.5168 18.2254 19.8388 17.8466C20.1607 17.4678 20.4022 17.1009 20.5632 16.7457C20.7242 16.3906 20.8047 16.0118 20.8047 15.6094C20.8047 15.1501 20.7005 14.7571 20.4922 14.4304C20.2839 14.099 19.9974 13.8433 19.6328 13.6634C19.2682 13.4834 18.8539 13.3935 18.3899 13.3935C17.9117 13.3935 17.4927 13.4929 17.1328 13.6918C16.773 13.8859 16.4936 14.1629 16.2947 14.5227C16.1006 14.8826 16.0036 15.3111 16.0036 15.8082H13.4964C13.4964 14.8849 13.7071 14.0824 14.1286 13.4006C14.55 12.7187 15.13 12.1908 15.8686 11.8168C16.612 11.4427 17.4643 11.2557 18.4254 11.2557C19.4008 11.2557 20.2578 11.438 20.9964 11.8026C21.7351 12.1671 22.308 12.6667 22.7152 13.3011C23.1271 13.9356 23.3331 14.66 23.3331 15.4744C23.3331 16.0189 23.2289 16.554 23.0206 17.0795C22.8123 17.6051 22.4453 18.1875 21.9197 18.8267C21.3989 19.4659 20.6674 20.2401 19.7251 21.1491L17.218 23.6989V23.7983H23.5533V26H13.5817Z"
@@ -35,21 +41,26 @@
     </svg>
     Снабжение
   </h2>
-  <p class="py-8 text-darkSecondary text-normal text-left text-xs mb-12">Внедрение и поставки по графику компонентов
+  <p class="pt-8 text-darkSecondary text-base text-left font-body font-normal whitespace-normal">Внедрение и поставки по
+    графику компонентов
     азиатских
     производителей</p>
   </div>
-  <div class="flex flex-row  justify-between mx-7">
-    <img src="/src/img/Truck.jpg" alt="Applications" class="w-full md:w-3/5">
-    <ul role="list"
-      class="w-full md:w-1/2 list-outside  list-square marker:text-markerOrange text-left 2xl:pl-52 md:pl-14">
-      <li class="pb-5 text-base font-medium">{{ text6 }}</li>
-      <li class="pt-8 pb-8 text-base font-medium">{{ text7 }}</li>
-      <li class="pt-8 pb-8 text-base font-medium">{{ text8 }}</li>
-      <li class="pt-8 pb-8 text-base font-medium">{{ text9 }}</li>
-      <li class="pt-8 pb-8 text-base font-medium">{{ text10 }}</li>
-      <li class="pt-8 pb-8 text-base font-medium">{{ text11 }}</li>
-    </ul>
+  <div class="flex md:flex-row flex-col  justify-between">
+    <div>
+      <img src="/src/img/Truck.jpg" alt="Applications" class="w-full md:w-3/5">
+    </div>
+    <div>
+      <ul role="list"
+        class="w-full md:w-1/2 list-outside  list-square marker:text-markerOrange text-left 2xl:pl-52 md:pl-14">
+        <li class="pb-5 text-base font-medium">{{ text6 }}</li>
+        <li class="pt-8 pb-8 text-base font-medium">{{ text7 }}</li>
+        <li class="pt-8 pb-8 text-base font-medium">{{ text8 }}</li>
+        <li class="pt-8 pb-8 text-base font-medium">{{ text9 }}</li>
+        <li class="pt-8 pb-8 text-base font-medium">{{ text10 }}</li>
+        <li class="pt-8 pb-8 text-base font-medium">{{ text11 }}</li>
+      </ul>
+    </div>
   </div>
   <h2 class="font-medium text-5xl sm:text-3xl md:text-4xl pt-20">
     <svg class="inline-block align-baseline" width="38" height="38" viewBox="0 0 38 38" fill="none"

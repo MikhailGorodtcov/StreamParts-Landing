@@ -61,7 +61,7 @@ module.exports = {
       arrow: 'url("/src/img/icon/arrown.svg")',
     },
     fontFamily: {
-      body: ["Inter", "SF Pro Display", "sans-serif"],
+      body: ["Inter", "sans-serif"],
     },
   },
 };
