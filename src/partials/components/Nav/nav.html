@@ -8,7 +8,7 @@
   добавляю gap что бы разделить разные блоки
   -->
   <div class="flex items-center gap-[64px]">
-    <ul id="menu" class="relative lg:flex gap-10 hidden">
+    <ul id="menu" class="relative lg:flex gap-10 hidden font-body">
       <li>
         <a href="./index.html" class="text-orange"> {{ link1.text }} </a>
       </li>
@@ -20,7 +20,7 @@
     </ul>
 
     <!-- Тут создаю отдельный див для кнопкой регистрации и ссылки также использую flex  -->
-    <ul class="flex items-center justify-between gap-8">
+    <ul class="flex items-center justify-between gap-8 font-body">
       <!-- Тут скрываю ссылку на экранах ниже sm-{640px} и показываю если выше  -->
       <li class="md:block before:top-[2px] before:relative hidden text-sm font-normal  before:content-arrow">
         <a href="{{ link3.url }}">{{ link3.text }} </a>

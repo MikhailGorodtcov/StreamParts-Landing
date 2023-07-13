@@ -35,6 +35,7 @@ module.exports = {
       fontFamily: {
         sans: [
           'SF Pro Display',
+          'SF Pro Text',
           'system-ui',
           '-apple-system',
         ],
@@ -63,5 +64,9 @@ module.exports = {
     fontFamily: {
       body: ["Inter", "sans-serif"],
     },
+    plugins: [
+      require('@tailwindcss/typography'),
+      // ...
+    ],
   },
 };
