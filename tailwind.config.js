@@ -60,6 +60,8 @@ module.exports = {
     // },
     content: {
       arrow: 'url("/src/img/icon/arrown.svg")',
+      more: 'url("/src/img/icon/more.svg")',
+      morewhite: 'url("/src/img/icon/morewhite.svg")',
     },
     fontFamily: {
       body: ["Inter", "sans-serif"],
