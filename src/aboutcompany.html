@@ -9,13 +9,14 @@
 </head>
 
 <body class="font-body text-black mx-auto">
-  <header class="max-w-[1220px] px-[30px] mx-auto">
-    <div class="flex items-center justify-between py-4 md:py-[12px]">
+  <header class="max-w-[1220px] px-[30px] mx-auto ">
+    <div class="flex items-center justify-between py-4 md:py-[12px">
       <div class="md:w-[140px]">
         <a href="/">
           <img src="./img/logo.svg" alt="logo" />
         </a>
       </div>
+      <!-- <div class="absolute w-full h-[1px] bg-[#EDEDED]"></div> -->
       <!-- Тут использую div и развожу flex кнопку войти и ссылки навгации
       добавляю gap что бы разделить разные блоки
       -->
@@ -28,8 +29,9 @@
             <a href="./aboutcompany.html" class="text-orange">О компании</a>
           </li>
           <!-- Добавил линию прямую  -->
-          <div class="absolute h-[32px] right-[-32px] w-[1px] bg-[#EDEDED]"></div>
+          <!-- <div class="absolute h-[32px] right-[-32px] w-[1px] bg-[#EDEDED]"></div> -->
         </ul>
+
 
         <!-- Тут создаю отдельный див для кнопкой регистрации и ссылки также использую flex  -->
         <ul class="flex items-center justify-between gap-8 font-body">
@@ -63,20 +65,24 @@
       </div>
     </div>
   </header>
+  <div class="absolute w-full h-[1px] bg-[#EDEDED]"></div>
 
   <main class="max-w-[1220px] px-[30px] mx-auto">
     <div class="md:flex justify-between flex-col-reverse items-center md:flex-row overflow-hidden">
-      <div class="w-[100%] pt-6 pb-4 bg-white">
-        <p class="text-black font-sans font-normal text-[22px] leading-[26.25px]">Стримпартс
+      <div class="w-[100%] md:w-1/2 pt-6 pb-4 md:pt-[27px] lg:pt-[60px] bg-white">
+        <p
+          class="text-black font-sans font-normal text-[22px] leading-[26.25px] md:text-[26px] md:leading-[31.03px] lg:text-[44px] lg:leading-[54.89px] lg:whitespace-normal">
+          Стримпартс
           (Streamparts.ru)
           основан в
           2019г.
           специалистами из логистики, дистрибуции электронных компонентов и
           IT.</p>
       </div>
-      <img class="w-full object-cover" src="/src/img/SPGlass.jpg" alt="">
+      <img class="w-full md:w-1/2  object-cover" src="/src/img/SPGlass.jpg" alt="">
     </div>
-    <section class="max-w-[1220px] mx-auto">
+    <div class="absolute w-full h-[1px] bg-[#EDEDED]"></div>
+    <section class="max-w-[1220px] mx-auto pt-8 md:pt-[60px]">
       <div class="w-full  border-0 bg-markerBlue rounded-xl">
         <div class="">
           <img src="/src/img/Globe.svg" alt="Globe">
