@@ -1,47 +1,67 @@
 <footer id="contacts" class=" bg-dark shadow m-4">
-  <div class="container mx-auto p-4 md:py-8">
-    <div class="sm:flex sm:items-center sm:justify-between">
-      <a href="#" class="flex items-center mb-4 sm:mb-0">
-        <img src="/src/img/logofooter.svg" class="h-8" alt="LogoStreamParst" />
-      </a>
-      <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
-        <li class="px-5">
-          <a href="#" class="inline-block text-center hover:text-blue">
-            Главная
-          </a>
-        </li>
-        <li class="px-5 py-3 border border-r-footerborder border-b-0 border-t-0 border-l-0">
-          <a href="#" class="inline-block text-center hover:text-blue">
-            О компании
-          </a>
-        </li>
-        <a href="#"
-          class="group md:inline-block xs:hidden items-center hover:text-blue text-white text-sm font-regular pl-2 pr-4 py-2">
-          <svg class="mr-2 md:inline-block xs:hidden items-center align-baseline" width="16" height="16"
-            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect opacity="0.15" width="16" height="16" rx="4" fill="white" />
-            <path
-              d="M11.3536 8.35355C11.5488 8.15829 11.5488 7.84171 11.3536 7.64645L8.17157 4.46447C7.97631 4.2692 7.65973 4.2692 7.46447 4.46447C7.2692 4.65973 7.2692 4.97631 7.46447 5.17157L10.2929 8L7.46447 10.8284C7.2692 11.0237 7.2692 11.3403 7.46447 11.5355C7.65973 11.7308 7.97631 11.7308 8.17157 11.5355L11.3536 8.35355ZM4 8.5L11 8.5L11 7.5L4 7.5L4 8.5Z"
-              fill="white" />
-          </svg>
-          Получить доступ
+  <div class="max-w-[1220px] px-[30px] mx-auto p-4 md:py-8">
+    <div class="flex items-center justify-between py-4 md:py-[12px]">
+      <div class="md:w-[140px]">
+        <a href="/">
+          <img src="./img/logofooter.svg" alt="logo" />
         </a>
-        <button class="px-6 py-2 rounded-xl bg-blue text-white">
-          <a href="#" class="inline-block text-center rounded-xl">
-            Войти
-          </a>
-        </button>
-      </ul>
+      </div>
+      <!-- Тут использую div и развожу flex кнопку войти и ссылки навгации
+      добавляю gap что бы разделить разные блоки
+      -->
+      <div class="flex items-center gap-[64px]">
+        <ul id="menu" class="relative lg:flex gap-10 hidden font-body">
+          <li>
+            <a href="./index.html" class="text-markerBlue">Главная</a>
+          </li>
+          <li>
+            <a href="./aboutcompany.html" class="text-white">О компании</a>
+          </li>
+          <!-- Добавил линию прямую  -->
+          <div class="absolute h-[32px] right-[-32px] w-[1px] bg-[#EDEDED]"></div>
+        </ul>
+
+        <!-- Тут создаю отдельный див для кнопкой регистрации и ссылки также использую flex  -->
+        <ul class="flex items-center justify-between gap-8 font-body">
+          <!-- Тут скрываю ссылку на экранах ниже sm-{640px} и показываю если выше  -->
+          <li
+            class="md:block before:top-[2px] before:relative hidden text-sm text-white font-normal  before:content-arrow">
+            <a href="#">Получить доступ</a>
+          </li>
+          <li class="ml-[28px] md:ml-0">
+            <a href="https://app.streamparts.ru/login"
+              class="inline-block text-center px-3.5 py-2 text-sm font-normal  rounded-lg bg-blue text-white">
+              Войти
+            </a>
+          </li>
+          <!-- тут бургер меню  его скрываем но показываем при разрешении до 768px -->
+          <li class="lg:hidden flex">
+            <div id="menu-burger">
+              <button class="rounded-md">
+                <svg class="items-center p-0 text-gray-700 dark:text-gray-300" width="26" height="26"
+                  viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.99609 6.99777H22.0036" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M18.0019 13.0002H3.99609" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M3.99609 19.0026H14.0003" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <hr class="my-6 text-center border border-footerborder sm:mx-auto lg:my-8" />
-    <div class="flex flex-wrap justify-between">
-      <span class="px-4 inline-block text-sm text-white sm:text-center">
+    <hr class="mt-4 mb-6 text-center border border-footerborder sm:mx-auto" />
+    <div class="flex flex-wrap justify-between gap-4">
+      <span class="inline-block text-sm text-white sm:text-center">
         <a href="#" class="hover:text-blue">© 2019 - 2023 Стримпартс</a>
       </span>
       <span class="inline-block text-sm text-white sm:text-center">
         <a href="#" class="hover:text-blue">Правила сайта</a>
       </span>
-      <span class="pr-40 inline-block text-sm text-white sm:text-center">
+      <span class="inline-block text-sm text-white sm:text-center">
         <a href="#" class="hover:text-blue">Политика обработки данных</a>
       </span>
       <span class="inline-block text-sm text-white sm:text-center">
@@ -79,118 +99,3 @@
     </div>
   </div>
 </footer>
-<!-- <div id="registration" aria-hidden="false" class="modal micromodal-slide bg-white is-open">
-<div tabindex="-1" data-micromodal-close="" class="modal__overlay z-50">
-  <div role="dialog" aria-modal="true" aria-labelledby="registration-title"
-    class="max-w-5xl w-full bg-white overflow-y-auto max-h-screen">
-    <header class="flex justify-between items-center py-6 px-8 border-black border-b border-opacity-20 relative">
-      <div id="registration-title" class="font-extrabold text-3xl">
-        Регистрация
-      </div>
-      <div class="mr-12 hidden md:block"><span class="text-orange text-3xl align-middle mr-3 -mt-1 leading-7">*</span>
-        <span class="opacity-40 text-sm align-middle leading-7">Поля, обязательные для заполнения</span>
-      </div> <button aria-label="Close modal" class="absolute top-5 right-8"><svg xmlns="http://www.w3.org/2000/svg"
-          fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg></button>
-    </header>
-    <div id="registration-content" class="py-6 px-8">
-      <form class="grid auto-cols-max grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 sm:gap-x-8">
-        <div class="form-group"><label for="company-name"><span class="label-text">Название
-              компании</span> <span class="label-sign">*</span> <svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20" fill="currentColor"
-              data-tippy-content="Компания, группа компаний, бренд, товарный знак"
-              class="tooltip-icon align-middle ml-1 h-5 w-5">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                clip-rule="evenodd"></path>
-            </svg></label> <input type="text" id="company-name" aria-describedby="company-name"
-            placeholder="Введите название компании" class="form-control"></div>
-        <div class="form-group"><label for="company-type"><span class="label-text">Тип компании</span>
-            <span class="label-sign">*</span></label>
-          <div class="select-dropdown"><select id="company-type" class="form-control">
-              <option value="">Выберите тип компании</option>
-              <option value="1">Производство</option>
-              <option value="2">Разработчик</option>
-              <option value="3">Реселлер</option>
-              <option value="20">Прочее</option>
-            </select></div>
-        </div>
-        <div class="form-group md:col-span-2 lg:col-span-1"><label for="company-site"><span class="label-text">Сайт
-              компании</span></label> <input type="text" id="company-site" aria-describedby="last-name"
-            placeholder="Введите сайт компании" class="form-control">
-
-        </div>
-        <div class="form-group"><label for="counterparty-legal-short-name"><span class="label-text">ИНН
-              юридического лица</span> <span class="label-sign">*</span> <svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20" fill="currentColor"
-              data-tippy-content="В адрес этого юридического лица мы будем выставлять счета и отгружать товар"
-              class="tooltip-icon align-middle ml-1 h-5 w-5">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                clip-rule="evenodd"></path>
-            </svg></label>
-          <div class="vue-simple-suggest designed">
-            <div role="combobox" aria-haspopup="listbox" aria-owns="1-suggestions" aria-expanded="false"
-              class="input-wrapper"><input type="text" id="counterparty-legal-short-name"
-                aria-describedby="counterparty-legal-short-name" placeholder="Введите ИНН" class="form-control"
-                aria-activedescendant="" aria-autocomplete="list" aria-controls="1-suggestions"></div>
-          </div>
-        </div>
-        <div class="form-group"><label for="counterparty-document_flow_type"><span class="label-text">Тип
-              документооборота</span></label>
-          <div class="select-dropdown"><select id="counterparty-document_flow_type" class="form-control">
-              <option value="1">Бумажный</option>
-              <option value="2">Электронный</option>
-            </select></div>
-        </div>
-        <div class="form-group md:col-span-2 lg:col-span-1"><label for="counterparty-name"><span
-              class="label-text">Название
-              юридического лица</span></label> <input type="text" id="counterparty-name" aria-describedby="first-name"
-            disabled="disabled" class="form-control"></div>
-        <div class="form-group"><label for="full_name-name"><span class="label-text">Имя и фамилия
-              пользователя</span> <span class="label-sign">*</span></label> <input type="text" id="full_name-name"
-            aria-describedby="first-name" placeholder="Введите имя и фамилию" class="form-control"></div>
-        <div class="form-group"><label for="user-role_type"><span class="label-text">Роль в
-              компании</span></label>
-          <div class="select-dropdown"><select id="user-role_type" class="form-control">
-              <option value="">Выберите роль в компании</option>
-              <option value="1">Инженер</option>
-              <option value="2">Закупщик</option>
-              <option value="3">Продажник</option>
-              <option value="4">Аналитик</option>
-              <option value="5">Руководитель</option>
-              <option value="20">Прочее</option>
-            </select></div>
-        </div>
-        <div class="form-group md:col-span-2 lg:col-span-1"><label for="email"><span class="label-text">E-mail</span>
-            <span class="label-sign">*</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-              fill="currentColor"
-              data-tippy-content="Данная электронная почта будет приявязана к аккаунту в Streamparts"
-              class="tooltip-icon align-middle ml-1 h-5 w-5">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                clip-rule="evenodd"></path>
-            </svg></label> <input type="email" id="email" aria-describedby="email" placeholder="Введите E-mail"
-            class="form-control"></div>
-        <div class="form-group md:col-span-2 lg:col-span-3 flex flex-col-reverse md:flex-row items-center">
-          <button disabled="disabled" type="submit" class="btn btn-orange mr-0 md:mr-7 w-[210px]">
-            Отправить
-          </button>
-          <div class="mb-6 md:mb-0">
-            <div class="opacity-50 text-sm">Отправляя данную форму, Вы подверждаете, что
-              согласны с:
-            </div>
-            <div class="font-semibold"><a href="https://app.streamparts.ru/terms-of-service"
-                class="text-blue hover:underline">Правилами сайта</a>
-              и
-              <a href="https://app.streamparts.ru/privacy-policy" class="text-blue hover:underline">политикой
-                обработки данных</a>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-</div>

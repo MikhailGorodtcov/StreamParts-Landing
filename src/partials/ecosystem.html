@@ -1,5 +1,6 @@
-<div class="max-w-[1220px] px-[30px] mx-auto pt-[100px]">
-  <h2 class="font-['SF Pro Text'] text-black text-[26px] lg:text-[46px] lg:leading-[31.03px] font-normal text-center">
+<div class="max-w-[1220px] px-[30px] mx-auto pt-[100px] pb-[100px]">
+  <h2
+    class="pb-[60px] font-['SF Pro Text'] text-black text-[26px] lg:text-[46px] lg:leading-[31.03px] font-normal text-center">
     Сервисы в личном кабинете</h2>
   <!-- Tabs -->
   <select data-te-select-init class="md:hidden flex">
@@ -8,33 +9,62 @@
     <option value="#third">Three</option>
     <option value="#fourth">Four</option>
   </select>
-  <ul id="tabs" class="md:inline-flex hidden pt-2 px-1 w-full border-b">
-    <li class="bg-white px-4  text-dark font-medium rounded-t border-t border-r border-l -mb-px"><a id="default-tab"
-        href="#first">Поисковый агрегатор</a></li>
-    <li class="px-4 text-gray-800 font-semibold py-2 rounded-t"><a href="#second">Каталог азиатских проивзодителей</a>
+  <ul id="tabs" class="md:inline-flex hidden w-full font-body">
+    <li class="bg-markerBlue text-white px-4 py-2 font-medium border border-gray rounded-t-2xl">
+      <a id="default-tab" href="#first">Поисковый
+        агрегатор</a>
     </li>
-    <li class="px-4 text-gray-800 font-semibold py-2 rounded-t"><a href="#third">Сиситема обработки запросов</a></li>
-    <li class="px-4 text-gray-800 font-semibold py-2 rounded-t"><a href="#fourth">Журнал заказов</a></li>
+    <li class=" text-black px-4 py-2 font-medium border border-gray rounded-t-2xl">
+      <a href="#second">Каталог азиатских проивзодителей</a>
+    </li>
+    <li class=" text-black px-4 py-2 font-medium border border-gray rounded-t-2xl">
+      <a href="#third">Сиситема обработки запросов</a>
+    </li>
+    <li class=" text-black px-4 py-2 font-medium border border-gray rounded-t-2xl">
+      <a href="#fourth">Журнал заказов</a>
+    </li>
   </ul>
 
   <!-- Tab Contents -->
-  <div id="tab-contents">
+  <div id="tab-contents" class="border border-gray ">
     <div id="first" class="p-4">
-      <div class="flex flex-row justify-between data-[te-tab-active]:block" id="first" role="tabpanel"
+      <div class="flex flex-wrap flex-row-reverse justify-between data-[te-tab-active]:block" id="first" role="tabpanel"
         aria-labelledby="first-tab" data-te-tab-activ>
-        <div role="list" class="w-[494px] py-16 list-square marker:text-markerBlue">
-          <p class="p-5 text-xs leading-6 text-dark font-medium">50 + источников в поисковой выдаче</p>
-          <p class="p-5 text-xs leading-6 text-dark font-medium">Опции из складского наличия и размещение в
+        <img class="w-[50%] object-cover" src="/src/img/tabs12.png" alt="Поисковый агрегатор">
+        <div class="flex flex-col justify-center ">
+          <p
+            class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+            50 + источников в поисковой
+            выдаче</p>
+          <p
+            class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+            Опции из складского наличия и
+            размещение в
             производство
-            </li>
-          <p class="p-5 text-xs leading-6 text-dark font-medium">Анализ доступности компонента</p>
-          <p class="p-5 text-xs leading-6 text-dark font-medium">Построчный поиск и списком &#40;загрузка BOM&#41;</li>
-          <p class="p-5 text-xs leading-6 text-dark font-medium">Кросс-референс аналоги</p>
-          <p class="p-5 text-xs leading-6 text-dark font-medium">Аналоги по типу упаковки</p>
-          <p class="p-5 text-xs leading-6 text-dark font-medium">Сохранение результатов поиска в корзине
+          </p>
+          <p
+            class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+            Анализ доступности компонента</p>
+          <p class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue
+            font-medium">
+            Построчный поиск и списком
+            &#40;загрузка BOM&#41;
+          </p>
+          <p class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue
+            font-medium">
+            Кросс-референс аналоги</p>
+          <p class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue
+            font-medium">
+            Аналоги по типу упаковки
+          </p>
+          <p class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue
+            font-medium">
+            Сохранение результатов
+            поиска в корзине<br>
             &#40;либо пуле корзин &#40;проект/заказ/клиент&#41;</p>
-          <li class="p-5 text-xs text-dark font-medium">Динамическое обновление корзины</p>
-            <img class="float-right object-cover" src="/src/img/searchaggregator.png" alt="Поисковый агрегатор">
+          <p
+            class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base text-markerBlue font-medium">
+            Динамическое обновление корзины</p>
         </div>
       </div>
     </div>
@@ -43,29 +73,29 @@
         <img class="object-cover float-right" src="/src/img/tabs2.jpg" alt="Каталог
     азиатских проивзодителей">
         <ul role="list" class="w-1/2 px-12 py-16 list-square marker:text-markerBlue">
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Параметрический поиск</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Текстовый поиск среди результатов категории</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Кросс-референс аналоги к западным компонентам
+          <li class=" text-xs leading-6 text-dark font-medium">Параметрический поиск</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Текстовый поиск среди результатов категории</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Кросс-референс аналоги к западным компонентам
             (pin2pin, функциональные)</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Техническая документация онлайн и ссылки для
+          <li class=" text-xs leading-6 text-dark font-medium">Техническая документация онлайн и ссылки для
             скачивания
           </li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Создание запроса</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Проверка на складское наличие компонента</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Создание запроса</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Проверка на складское наличие компонента</li>
         </ul>
       </div>
     </div>
     <div id="third" class="hidden p-4">
       <div class="xl:hidden flex flex-row justify-between data-[te-tab-active]:block" data-target="third">
         <ul role="list" class="w-1/2 px-12 py-16 list-square marker:text-markerBlue">
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Дополнительные источники складского наличия в Китае
+          <li class=" text-xs leading-6 text-dark font-medium">Дополнительные источники складского наличия в Китае
           </li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Потенциал улучшения цены на чеки от 5000 USD или
+          <li class=" text-xs leading-6 text-dark font-medium">Потенциал улучшения цены на чеки от 5000 USD или
             эквивалент</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Повторяющийся запрос о поступлении на склад</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Расчет поставки от иностранного источника
+          <li class=" text-xs leading-6 text-dark font-medium">Повторяющийся запрос о поступлении на склад</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Расчет поставки от иностранного источника
             (заказная поставка)</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Срок квотации 12 - 24 часов</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Срок квотации 12 - 24 часов</li>
         </ul>
         <img class="object-coverfloat-right" src="/src/img/tabs3.jpg" alt="Сиситема
     обработки запросов">
@@ -77,10 +107,10 @@
         <img class="object-coverfloat-right" src="/src/img/tabs4.jpg" alt="Журнал
   заказов">
         <ul role="list" class="w-1/2 px-12 py-16 list-square marker:text-markerBlue">
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Отслеживание статусов размещенных заказов</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Динамическая ожидаемая дата поставки</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Выставленные счета и статус оплаты</li>
-          <li class="p-5 text-xs leading-6 text-dark font-medium">Просматриваемость заказов подчиненных аккаунтов</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Отслеживание статусов размещенных заказов</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Динамическая ожидаемая дата поставки</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Выставленные счета и статус оплаты</li>
+          <li class=" text-xs leading-6 text-dark font-medium">Просматриваемость заказов подчиненных аккаунтов</li>
         </ul>
       </div>
     </div>

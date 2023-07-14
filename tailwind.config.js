@@ -62,6 +62,8 @@ module.exports = {
       arrow: 'url("/src/img/icon/arrown.svg")',
       more: 'url("/src/img/icon/more.svg")',
       morewhite: 'url("/src/img/icon/morewhite.svg")',
+      markerb: 'url("/src/img/icon/markerb.svg")',
+      orangem: 'url("/src/img/icon/orange.svg")',
     },
     fontFamily: {
       body: ["Inter", "sans-serif"],
