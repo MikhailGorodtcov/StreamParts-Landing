@@ -33,12 +33,15 @@ module.exports = {
         mxlg: "202px",
       },
       fontFamily: {
-        sans: [
-          'SF Pro Display',
-          'SF Pro Text',
-          'system-ui',
-          '-apple-system',
-        ],
+        // sans: [
+        //   'SF Pro Display',
+        //   'SF Pro Text',
+        //   'system-ui',
+        //   '-apple-system',
+        // ],
+        pro: "SF Pro Display",
+        protext: "SF Pro Text",
+        mono: "Roboto Mono, sans-serif",
       },
       screens: {
         "3xs": "340px",
@@ -69,7 +72,7 @@ module.exports = {
       body: ["Inter", "sans-serif"],
     },
     plugins: [
-      require('@tailwindcss/typography'),
+      require("@tailwindcss/typography"),
       // ...
     ],
   },
