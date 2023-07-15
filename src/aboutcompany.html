@@ -1,198 +1,185 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <include
-    src="src/components/Head/head.html"
-    locals='{"title":{"title": "О компании"}}'
-  ></include>
+<include src="src/components/Head/head.html" locals='{"title":{"title": "О компании"}}'></include>
 
-  <body class="mx-auto font-body text-dark">
-    <div class="max-w-[1220px] px-[30px] mx-auto">
-      <!-- тут мы импортируем header  в котором лежит nav ссылки -->
-      <include src="src/components/Header/header.html"></include>
-      <main>
-        <div>
-          <div
-            class="flex-col-reverse items-center justify-between overflow-hidden md:flex md:flex-row"
-          >
-            <div
-              class="w-full md:w-1/2 pt-6 pb-4 md:pt-[27px] lg:pt-[60px] bg-white"
-            >
-              <p
-                class="text-black font-sans font-normal text-[22px] leading-[26.25px] md:text-[26px] md:leading-[31.03px] lg:text-[44px] lg:leading-[54.89px] lg:whitespace-normal"
-              >
-                Стримпартс (Streamparts.ru) основан в 2019г. специалистами из
-                логистики, дистрибуции электронных компонентов и IT.
-              </p>
-            </div>
-            <img
-              class="object-cover w-full md:w-1/2"
-              src="/src/img/SPGlass.jpg"
-              alt=""
-            />
+<body class="mx-auto font-body text-dark">
+  <div class="max-w-[1220px] px-[30px] mx-auto">
+    <!-- тут мы импортируем header  в котором лежит nav ссылки -->
+    <include src="src/components/Header/header.html"></include>
+    <main>
+      <div>
+        <div class="flex-col-reverse items-center justify-between overflow-hidden md:flex md:flex-row">
+          <div class="w-full md:w-1/2 pt-6 pb-4 md:pt-[27px] lg:pt-[60px] bg-white">
+            <p
+              class="text-black font-sans font-normal text-[22px] leading-[26.25px] md:text-[26px] md:leading-[31.03px] lg:text-[44px] lg:leading-[54.89px] lg:whitespace-normal">
+              Стримпартс (Streamparts.ru) основан в 2019г. специалистами из
+              логистики, дистрибуции электронных компонентов и IT.
+            </p>
           </div>
-          <!-- <div class="absolute w-full h-[1px] bg-[#EDEDED]"></div> -->
-          <section class="max-w-[1220px] mx-auto">
-            <div
-              class="flex-col border-0 md:flex lg:flex-row sm:flex-wrap bg-markerBlue rounded-xl"
-            >
-              <div class="w-full md:w-1/2">
-                <div class="w-full pt-9 pl-9">
-                  <img src="/src/img/Globe.svg" alt="Globe" />
+          <img class="object-cover w-full md:w-1/2" src="/src/img/SPGlass.jpg" alt="" />
+        </div>
+        <!-- <div class="absolute w-full h-[1px] bg-[#EDEDED]"></div> -->
+        <section class="max-w-[1220px] mx-auto">
+          <div class="mt-5 bg-markerBlue rounded-2xl">
+            <div class="max-w-[1008px] py-10 mx-auto">
+              <div class="relative flex justify-between">
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <img src="/src/img/Globe.svg" alt="">
+                  </div>
+                  <div>
+                    Мы развиваем каталог электронных компонентов, собственный
+                    цифровой продукт и IT-системы, направленные на своевременную
+                    доставку товара.
+                  </div>
+                  <!-- позиционирование блока -->
+                  <div class="h-[100%] absolute right-50% bg-orange w-[1px]"></div>
                 </div>
-                <p
-                  class="text-xs text-white whitespace-normal py-9 px-9 md:text-sm lg:text-xl"
-                >
-                  Мы развиваем каталог электронных компонентов, собственный
-                  цифровой продукт и IT-системы, направленные на своевременную
-                  доставку товара.
-                </p>
-              </div>
-              <hr class="text-right border border-white sm:mx-auto" />
-              <div class="w-full md:w-1/2">
-                <div class="w-full pt-9 pl-9">
-                  <img src="/src/img/hub.svg" alt="hub" />
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <img src="/src/img/hub.svg" alt="">
+                  </div>
+                  <div>
+                    Мы развиваем каталог электронных компонентов, собственный
+                    цифровой продукт и IT-системы, направленные на своевременную
+                    доставку товара.
+                  </div>
                 </div>
-                <p
-                  class="text-xs text-white whitespace-normal py-9 px-9 md:text-sm lg:text-xl"
-                >
-                  Постоянно адаптируем наш сервис в условиях быстро меняющейся
-                  внешней среды, не стоим на месте и движемся вперед.
-                </p>
               </div>
             </div>
-          </section>
-        </div>
-
+          </div>
+        </section>
         <div class="max-w-[1220px] px-[30px] mx-auto flex">
-      <p class="py-8 text-5xl text-left">
-        Мы поддерживаем потребности внеплановой закупки и пополнения складского запаса, поставки образцов для
-        изготовления прототипов устройств, снабжаем промышленное производство
-      </p>
-    </div>
-    <div class="max-w-[1220px] px-[30px] mx-auto flex rounded-xl">
-      <div class="w-1/2 px-16 py-12 mr-5 border border-gray rounded-xl">
-        <svg class="mb-10" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="64" height="64" rx="13.7143" fill="#007BFF" />
-          <path
-            d="M37.3331 18.1785C33.546 18.1785 30.476 21.249 30.476 25.0357C30.476 28.8223 33.546 31.8928 37.3331 31.8928C41.1203 31.8928 44.1903 28.8223 44.1903 25.0357C44.1903 21.249 41.1203 18.1785 37.3331 18.1785ZM25.9046 19.7023C22.5383 19.7023 19.8093 22.4315 19.8093 25.7976C19.8093 29.1637 22.5383 31.8928 25.9046 31.8928C27.1684 31.8928 28.3655 31.5073 29.3807 30.7972C30.0705 30.3157 30.2438 29.345 29.7616 28.6547C29.2795 27.9644 28.3562 27.8395 27.6664 28.321C27.1591 28.6761 26.5388 28.8452 25.9046 28.8452C24.2214 28.8452 22.857 27.4814 22.857 25.7976C22.857 24.1138 24.2214 22.75 25.9046 22.75C26.4016 22.75 26.8563 22.8597 27.2854 23.0837C28.0321 23.4722 28.9924 23.2102 29.3807 22.4635C29.7691 21.7184 29.4607 20.7568 28.7142 20.3697C27.8531 19.9217 26.8941 19.7023 25.9046 19.7023ZM37.3331 21.2261C39.4371 21.2261 41.1427 22.9313 41.1427 25.0357C41.1427 27.14 39.4371 28.8452 37.3331 28.8452C35.2292 28.8452 33.5236 27.14 33.5236 25.0357C33.5236 22.9313 35.2292 21.2261 37.3331 21.2261ZM21.4284 33.9408C18.6336 35.0943 16.7617 37.921 16.7617 41.0357V44.0833C16.7617 44.9244 17.4439 45.6071 18.2855 45.6071H24.3808C25.2224 45.6071 25.9046 44.9244 25.9046 44.0833C25.9046 43.2421 25.2224 42.5595 24.3808 42.5595H19.8093V41.0357C19.8093 39.3229 20.8253 37.7504 21.993 37.0585C23.0912 37.5218 24.2529 37.8723 25.2861 37.9591C26.1248 38.0307 26.881 37.3983 26.9522 36.5587C27.0234 35.7206 26.4173 35.0106 25.5788 34.9389C24.9098 34.8826 24.1787 34.6814 23.3331 34.3218C23.129 34.2349 23.0104 34.1663 22.6189 33.988C22.2351 33.8128 21.8182 33.7793 21.4284 33.9408ZM32.095 33.9408C29.3002 35.0943 27.4284 37.921 27.4284 41.0357V44.0833C27.4284 44.9244 28.1106 45.6071 28.9522 45.6071H45.7141C46.5557 45.6071 47.2379 44.9244 47.2379 44.0833V41.0357C47.2379 37.9941 45.3557 35.2361 42.5712 34.0353C42.1793 33.8661 41.7226 33.8616 41.3331 34.0353C39.9849 34.6402 38.6714 34.9404 37.3331 34.9404C35.9995 34.9404 34.6814 34.6235 33.2856 33.988C32.9018 33.8128 32.4848 33.7793 32.095 33.9408ZM32.681 37.0585C34.1206 37.6041 35.8564 37.988 37.3331 37.988C38.7983 37.988 40.4623 37.6299 41.8729 37.1088C43.2483 37.892 44.1903 39.3579 44.1903 41.0357V42.5595H30.476V41.0357C30.476 39.2604 31.4755 37.7641 32.681 37.0585Z"
-            fill="white" />
-        </svg>
-        <h2 class="mb-5 text-5xl text-black">
-          Наши сотрудники
-        </h2>
-        <p class="text-xs text-black md:text-sm lg:text-xl">
-          имеют ценный опыт работы в ключевых российских и международных компаниях отрасли
-        </p>
-      </div>
-      <div class="w-1/2 px-16 py-12 border border-gray rounded-xl">
-        <svg class="mb-5" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="64" height="64" rx="13.7143" fill="#FB5801" />
-          <path
-            d="M22.9982 18.4863C22.9247 18.4863 22.5917 18.5418 22.4822 18.5808C22.0922 18.7173 21.7982 18.9813 21.6392 19.3308L17.2757 28.0788C17.2757 28.0788 17.0087 28.4403 16.9982 28.9908C16.9877 29.5413 17.3927 29.9808 17.3927 29.9808L30.8267 46.4358C31.4267 47.1693 32.5697 47.1693 33.1697 46.4358C33.5882 45.9243 46.6562 29.9073 46.6562 29.9073C46.6562 29.9073 46.9892 29.4843 46.9982 28.9908C47.0087 28.4973 46.7462 28.1478 46.7462 28.1478L42.3572 19.3308C42.1982 18.9813 41.9042 18.7173 41.5142 18.5808C41.4047 18.5418 41.0732 18.4863 40.9982 18.4863H22.9982ZM25.1072 21.4878H38.8892L36.7802 27.4908H27.2177L25.1072 21.4878ZM22.7642 23.8323L24.0767 27.4908H20.9357L22.7642 23.8323ZM41.2322 23.8323L43.0607 27.4908H39.9197L41.2322 23.8323ZM21.6857 30.4908H25.1072L27.7322 37.9008L21.6857 30.4908ZM28.2947 30.4908H35.7017L31.9982 40.9967L28.2947 30.4908ZM38.8892 30.4908H42.3107C40.8737 32.2473 38.7887 34.8198 36.2642 37.9008L38.8892 30.4908Z"
-            fill="white" />
-        </svg>
+          <p class="py-8 text-5xl text-left">
+            Мы поддерживаем потребности внеплановой закупки и пополнения складского запаса, поставки образцов для
+            изготовления прототипов устройств, снабжаем промышленное производство
+          </p>
+        </div>
+        <div class="max-w-[1220px] px-[30px] mx-auto flex rounded-xl">
+          <div class="w-1/2 px-16 py-12 mr-5 border border-gray rounded-xl">
+            <svg class="mb-10" width="64" height="64" viewBox="0 0 64 64" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="13.7143" fill="#007BFF" />
+              <path
+                d="M37.3331 18.1785C33.546 18.1785 30.476 21.249 30.476 25.0357C30.476 28.8223 33.546 31.8928 37.3331 31.8928C41.1203 31.8928 44.1903 28.8223 44.1903 25.0357C44.1903 21.249 41.1203 18.1785 37.3331 18.1785ZM25.9046 19.7023C22.5383 19.7023 19.8093 22.4315 19.8093 25.7976C19.8093 29.1637 22.5383 31.8928 25.9046 31.8928C27.1684 31.8928 28.3655 31.5073 29.3807 30.7972C30.0705 30.3157 30.2438 29.345 29.7616 28.6547C29.2795 27.9644 28.3562 27.8395 27.6664 28.321C27.1591 28.6761 26.5388 28.8452 25.9046 28.8452C24.2214 28.8452 22.857 27.4814 22.857 25.7976C22.857 24.1138 24.2214 22.75 25.9046 22.75C26.4016 22.75 26.8563 22.8597 27.2854 23.0837C28.0321 23.4722 28.9924 23.2102 29.3807 22.4635C29.7691 21.7184 29.4607 20.7568 28.7142 20.3697C27.8531 19.9217 26.8941 19.7023 25.9046 19.7023ZM37.3331 21.2261C39.4371 21.2261 41.1427 22.9313 41.1427 25.0357C41.1427 27.14 39.4371 28.8452 37.3331 28.8452C35.2292 28.8452 33.5236 27.14 33.5236 25.0357C33.5236 22.9313 35.2292 21.2261 37.3331 21.2261ZM21.4284 33.9408C18.6336 35.0943 16.7617 37.921 16.7617 41.0357V44.0833C16.7617 44.9244 17.4439 45.6071 18.2855 45.6071H24.3808C25.2224 45.6071 25.9046 44.9244 25.9046 44.0833C25.9046 43.2421 25.2224 42.5595 24.3808 42.5595H19.8093V41.0357C19.8093 39.3229 20.8253 37.7504 21.993 37.0585C23.0912 37.5218 24.2529 37.8723 25.2861 37.9591C26.1248 38.0307 26.881 37.3983 26.9522 36.5587C27.0234 35.7206 26.4173 35.0106 25.5788 34.9389C24.9098 34.8826 24.1787 34.6814 23.3331 34.3218C23.129 34.2349 23.0104 34.1663 22.6189 33.988C22.2351 33.8128 21.8182 33.7793 21.4284 33.9408ZM32.095 33.9408C29.3002 35.0943 27.4284 37.921 27.4284 41.0357V44.0833C27.4284 44.9244 28.1106 45.6071 28.9522 45.6071H45.7141C46.5557 45.6071 47.2379 44.9244 47.2379 44.0833V41.0357C47.2379 37.9941 45.3557 35.2361 42.5712 34.0353C42.1793 33.8661 41.7226 33.8616 41.3331 34.0353C39.9849 34.6402 38.6714 34.9404 37.3331 34.9404C35.9995 34.9404 34.6814 34.6235 33.2856 33.988C32.9018 33.8128 32.4848 33.7793 32.095 33.9408ZM32.681 37.0585C34.1206 37.6041 35.8564 37.988 37.3331 37.988C38.7983 37.988 40.4623 37.6299 41.8729 37.1088C43.2483 37.892 44.1903 39.3579 44.1903 41.0357V42.5595H30.476V41.0357C30.476 39.2604 31.4755 37.7641 32.681 37.0585Z"
+                fill="white" />
+            </svg>
+            <h2 class="mb-5 text-5xl text-black">
+              Наши сотрудники
+            </h2>
+            <p class="text-xs text-black md:text-sm lg:text-xl">
+              имеют ценный опыт работы в ключевых российских и международных компаниях отрасли
+            </p>
+          </div>
+          <div class="w-1/2 px-16 py-12 border border-gray rounded-xl">
+            <svg class="mb-5" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="13.7143" fill="#FB5801" />
+              <path
+                d="M22.9982 18.4863C22.9247 18.4863 22.5917 18.5418 22.4822 18.5808C22.0922 18.7173 21.7982 18.9813 21.6392 19.3308L17.2757 28.0788C17.2757 28.0788 17.0087 28.4403 16.9982 28.9908C16.9877 29.5413 17.3927 29.9808 17.3927 29.9808L30.8267 46.4358C31.4267 47.1693 32.5697 47.1693 33.1697 46.4358C33.5882 45.9243 46.6562 29.9073 46.6562 29.9073C46.6562 29.9073 46.9892 29.4843 46.9982 28.9908C47.0087 28.4973 46.7462 28.1478 46.7462 28.1478L42.3572 19.3308C42.1982 18.9813 41.9042 18.7173 41.5142 18.5808C41.4047 18.5418 41.0732 18.4863 40.9982 18.4863H22.9982ZM25.1072 21.4878H38.8892L36.7802 27.4908H27.2177L25.1072 21.4878ZM22.7642 23.8323L24.0767 27.4908H20.9357L22.7642 23.8323ZM41.2322 23.8323L43.0607 27.4908H39.9197L41.2322 23.8323ZM21.6857 30.4908H25.1072L27.7322 37.9008L21.6857 30.4908ZM28.2947 30.4908H35.7017L31.9982 40.9967L28.2947 30.4908ZM38.8892 30.4908H42.3107C40.8737 32.2473 38.7887 34.8198 36.2642 37.9008L38.8892 30.4908Z"
+                fill="white" />
+            </svg>
 
-        <h2 class="mb-5 text-5xl text-black">
-          Нашими клиентами
-        </h2>
-        <p class="text-xs text-black md:text-sm lg:text-xl">
-          являются российские разработчики, производители электронной
-          аппаратуры гражданских отраслей промышленности и дистрибуторы
-        </p>
-      </div>
-    </div>
-    <div class="container px-5 py-5 mx-auto">
-      <h2 class="py-12 text-5xl font-normal text-left">
-        Наша география
-      </h2>
-      <div class="flex flex-wrap w-full h-full">
-        <div class="items-center w-1/3 p-4 md:w-1/3">
-          <div class="h-full overflow-hidden">
-            <div class="w-full">
-              <div class="flex w-full p-2">
+            <h2 class="mb-5 text-5xl text-black">
+              Нашими клиентами
+            </h2>
+            <p class="text-xs text-black md:text-sm lg:text-xl">
+              являются российские разработчики, производители электронной
+              аппаратуры гражданских отраслей промышленности и дистрибуторы
+            </p>
+          </div>
+        </div>
+        <div class="container px-5 py-5 mx-auto">
+          <h2 class="py-12 text-5xl font-normal text-left">
+            Наша география
+          </h2>
+          <div class="flex flex-wrap w-full h-full">
+            <div class="items-center w-1/3 p-4 md:w-1/3">
+              <div class="h-full overflow-hidden">
+                <div class="w-full">
+                  <div class="flex w-full p-2">
+                  </div>
+                </div>
+                <img class="object-cover object-center w-full h-1/2 rounded-2xl" src="/src/img/shenzhen.jpg"
+                  alt="blog cover" />
+                <div class="p-4">
+                  <h3 class="mb-3 text-2xl font-medium">Шэньчжэнь</h3>
+                  <div class="flex flex-wrap items-center ">
+                    <p class="inline-flex items-center">
+                      Офис и склад консолидации
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <img class="object-cover object-center w-full h-1/2 rounded-2xl" src="/src/img/shenzhen.jpg"
-              alt="blog cover" />
-            <div class="p-4">
-              <h3 class="mb-3 text-2xl font-medium">Шэньчжэнь</h3>
-              <div class="flex flex-wrap items-center ">
-                <p class="inline-flex items-center">
-                  Офис и склад консолидации
-                </p>
+            <div class="w-1/3 p-4 md:w-1/3">
+              <div class="h-full overflow-hidden">
+                <div class="w-full">
+                  <div class="flex w-full p-2">
+                  </div>
+                </div>
+                <img class="object-cover object-center w-full h-1/2 rounded-2xl" src="/src/img/shanghai.jpg"
+                  alt="blog cover" />
+                <div class="p-4">
+                  <h3 class="mb-3 text-2xl font-medium">Шанхай</h3>
+                  <div class="flex flex-wrap items-center ">
+                    <p class="inline-flex items-center">
+                      Офис по работе c китайскими производителями
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3 p-4 md:w-1/3">
+              <div class="h-full overflow-hidden">
+                <div class="w-full">
+                  <div class="flex w-full p-2">
+                  </div>
+                </div>
+                <img class="object-cover object-center w-full h-1/2 rounded-2xl" src="/src/img/sanktpeterburg.jpg"
+                  alt="blog cover" />
+                <div class="p-4">
+                  <h3 class="mb-3 text-2xl font-medium">Санкт-Петербург</h3>
+                  <div class="flex flex-wrap items-center ">
+                    <p class="inline-flex items-center">
+                      Офис и склад
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="w-1/3 p-4 md:w-1/3">
-          <div class="h-full overflow-hidden">
-            <div class="w-full">
-              <div class="flex w-full p-2">
-              </div>
-            </div>
-            <img class="object-cover object-center w-full h-1/2 rounded-2xl" src="/src/img/shanghai.jpg"
-              alt="blog cover" />
-            <div class="p-4">
-              <h3 class="mb-3 text-2xl font-medium">Шанхай</h3>
-              <div class="flex flex-wrap items-center ">
-                <p class="inline-flex items-center">
-                  Офис по работе c китайскими производителями
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-1/3 p-4 md:w-1/3">
-          <div class="h-full overflow-hidden">
-            <div class="w-full">
-              <div class="flex w-full p-2">
-              </div>
-            </div>
-            <img class="object-cover object-center w-full h-1/2 rounded-2xl" src="/src/img/sanktpeterburg.jpg"
-              alt="blog cover" />
-            <div class="p-4">
-              <h3 class="mb-3 text-2xl font-medium">Санкт-Петербург</h3>
-              <div class="flex flex-wrap items-center ">
-                <p class="inline-flex items-center">
-                  Офис и склад
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="flex flex-wrap items-center mx-auto">
+          <h2 class="py-12 text-5xl font-normal text-left pr-96">
+            Связаться с нами
+          </h2>
+          <p class="items-center inline-block pl-10 pr-8 text-sm text-black sm:text-center">
+            <svg class="inline-block" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.2832 19.7161C14.5282 17.9611 13.2052 15.9961 12.3262 14.0026C12.1402 13.5811 12.2497 13.0876 12.5752 12.7621L13.8037 11.5351C14.8102 10.5286 14.8102 9.10505 13.9312 8.22605L12.1702 6.46505C10.9987 5.29355 9.09974 5.29355 7.92824 6.46505L6.95024 7.44305C5.83874 8.55455 5.37524 10.1581 5.67524 11.7481C6.41624 15.6676 8.69324 19.9591 12.3667 23.6326C16.0402 27.3061 20.3317 29.5831 24.2512 30.3241C25.8412 30.6241 27.4447 30.1606 28.5562 29.0491L29.5327 28.0726C30.7042 26.9011 30.7042 25.0021 29.5327 23.8306L27.7732 22.0711C26.8942 21.1921 25.4692 21.1921 24.5917 22.0711L23.2372 23.4271C22.9117 23.7526 22.4182 23.8621 21.9967 23.6761C20.0032 22.7956 18.0382 21.4711 16.2832 19.7161Z"
+                stroke="#323232" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <a href="#" class="hover:text-blue">+7 (812) 509-66-56</a>
+          </p>
+          <p class="inline-block text-sm text-black sm:text-center">
+            <svg class="inline-block" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.0619 19.077L29.8209 14.4945C30.8724 13.7835 31.5009 12.597 31.5009 11.328V11.328C31.5009 9.213 29.7879 7.5 27.6744 7.5H8.34994C6.23644 7.5 4.52344 9.213 4.52344 11.3265V11.3265C4.52344 12.5955 5.15194 13.782 6.20344 14.4945L12.9624 19.077C16.0119 21.144 20.0124 21.144 23.0619 19.077V19.077Z"
+                stroke="#323232" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M4.5 11.3267V25.5002C4.5 27.9857 6.5145 30.0002 9 30.0002H27C29.4855 30.0002 31.5 27.9857 31.5 25.5002V11.3282"
+                stroke="#323232" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <a href="#" class="hover:text-blue">mailto:support@streamparts.ru</a>
+          </p>
         </div>
       </div>
-    </div>
-    <div class="flex flex-wrap items-center mx-auto">
-      <h2 class="py-12 text-5xl font-normal text-left pr-96">
-        Связаться с нами
-      </h2>
-      <p class="items-center inline-block pl-10 pr-8 text-sm text-black sm:text-center">
-        <svg class="inline-block" width="36" height="36" viewBox="0 0 36 36" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M16.2832 19.7161C14.5282 17.9611 13.2052 15.9961 12.3262 14.0026C12.1402 13.5811 12.2497 13.0876 12.5752 12.7621L13.8037 11.5351C14.8102 10.5286 14.8102 9.10505 13.9312 8.22605L12.1702 6.46505C10.9987 5.29355 9.09974 5.29355 7.92824 6.46505L6.95024 7.44305C5.83874 8.55455 5.37524 10.1581 5.67524 11.7481C6.41624 15.6676 8.69324 19.9591 12.3667 23.6326C16.0402 27.3061 20.3317 29.5831 24.2512 30.3241C25.8412 30.6241 27.4447 30.1606 28.5562 29.0491L29.5327 28.0726C30.7042 26.9011 30.7042 25.0021 29.5327 23.8306L27.7732 22.0711C26.8942 21.1921 25.4692 21.1921 24.5917 22.0711L23.2372 23.4271C22.9117 23.7526 22.4182 23.8621 21.9967 23.6761C20.0032 22.7956 18.0382 21.4711 16.2832 19.7161Z"
-            stroke="#323232" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
+    </main>
 
-        <a href="#" class="hover:text-blue">+7 (812) 509-66-56</a>
-      </p>
-      <p class="inline-block text-sm text-black sm:text-center">
-        <svg class="inline-block" width="36" height="36" viewBox="0 0 36 36" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M23.0619 19.077L29.8209 14.4945C30.8724 13.7835 31.5009 12.597 31.5009 11.328V11.328C31.5009 9.213 29.7879 7.5 27.6744 7.5H8.34994C6.23644 7.5 4.52344 9.213 4.52344 11.3265V11.3265C4.52344 12.5955 5.15194 13.782 6.20344 14.4945L12.9624 19.077C16.0119 21.144 20.0124 21.144 23.0619 19.077V19.077Z"
-            stroke="#323232" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
-          <path
-            d="M4.5 11.3267V25.5002C4.5 27.9857 6.5145 30.0002 9 30.0002H27C29.4855 30.0002 31.5 27.9857 31.5 25.5002V11.3282"
-            stroke="#323232" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <a href="#" class="hover:text-blue">mailto:support@streamparts.ru</a>
-      </p>
-    </div>
-    </div>
-      </main>
-
-      <!-- <footer id="contacts" class="m-4 bg-dark">
+    <!-- <footer id="contacts" class="m-4 bg-dark">
     <div class="max-w-[1220px] px-[30px] mx-auto p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="#" class="flex items-center mb-4 sm:mb-0">
@@ -273,113 +260,9 @@
       </div>
     </div>
   </footer> -->
-      <!-- Синяя плашка -->
-      <div class="mt-5 bg-markerBlue rounded-2xl">
-        <div class="max-w-[1008px] py-10 mx-auto">
-          <div class="relative flex justify-between">
-            <div class="flex flex-col gap-6">
-              <div>
-                <svg
-                  width="44"
-                  height="45"
-                  viewBox="0 0 44 45"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    y="0.5"
-                    width="44"
-                    height="44"
-                    rx="8"
-                    fill="white"
-                    fill-opacity="0.4"
-                  />
-                  <path
-                    d="M35.5023 22.5C35.5023 19.5858 29.4563 17.2238 21.9967 17.2238H20.4961"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M21.4805 25.7504L23.5063 27.7762L21.4805 29.8021"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <circle
-                    cx="21.9978"
-                    cy="22.5"
-                    r="13.5056"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M26.9078 27.4111C31.9358 26.6431 35.5023 24.7365 35.5023 22.5C35.5023 19.5858 29.4563 17.2238 21.9967 17.2238H20.4961"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M17.0867 17.5889C12.0587 18.3569 8.49219 20.2635 8.49219 22.5C8.49219 25.4142 14.5382 27.7762 21.9978 27.7762H23.5059"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M22 36.0056C24.9142 36.0056 27.2762 29.9596 27.2762 22.5V20.9919"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M21.9989 8.99438C19.0846 8.99438 16.7227 15.0404 16.7227 22.5V24.0006"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M22 8.99438C24.2365 8.99438 26.1431 12.5609 26.9111 17.5889"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M21.997 36.0056C19.7606 36.0056 17.8539 32.4391 17.0859 27.4111"
-                    stroke="white"
-                    stroke-width="2.25"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div>
-                Мы развиваем каталог электронных компонентов, собственный
-                цифровой продукт и IT-системы, направленные на своевременную
-                доставку товара.
-              </div>
-              <!-- позиционирование блока -->
-              <div class="h-[100%] absolute right-50% bg-orange w-[1px]"></div>
-            </div>
-            <div class="flex flex-col gap-6">
-              <div>2.1</div>
-              <div>
-                Мы развиваем каталог электронных компонентов, собственный
-                цифровой продукт и IT-системы, направленные на своевременную
-                доставку товара.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    <!-- Синяя плашка -->
+
+  </div>
+</body>
+
 </html>
