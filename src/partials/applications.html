@@ -1,28 +1,126 @@
-<section id="applications" class="container mx-auto px-4 md:px-8 py-32">
-  <div class="mb-12 sm:mb-20 text-blue text-5xl sm:text-7xl font-extralight text-center">
-    {{ heading }}
+<section>
+  <div class="max-w-[1220px] px-[30px] mx-auto">
+    <div class="flex flex-col md:gap-20">
+      <div class="font-pro text-black text-[26px] lg:text-[46px] lg:leading-[31.03px] font-normal whitespace-nowrap">
+        Направления поставок
+      </div>
+      <div class="flex flex-col md:gap-3 md:pb-8">
+        <h2 class="text-xl font-medium font-body md:text-xl">
+          <svg class="inline-block" width="38" height="38" viewBox="0 0 38 38" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.2" cx="19" cy="19" r="19" fill="#007BFF" />
+            <path d="M20.9041 11.4545V26H18.2692V14.0185H18.1839L14.782 16.1918V13.777L18.397 11.4545H20.9041Z"
+              fill="#007BFF" />
+          </svg>
+          Свободный рынок
+        </h2>
+        <div class="text-base font-normal text-[#272937] font-body">
+          Складские поставки дефицитных компонентов в условиях санкций
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-[1px] bg-[#EDEDED]"></div>
+    <div class="flex flex-col-reverse md:flex md:flex-row md:mt-8 gap-7">
+      <ul role="list" class="flex w-full gap-10 flex-col font-['Inter'] font-medium text-dark">
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text1 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text2 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text3 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text4 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text5 }}</li>
+      </ul>
+      <div class="w-full bg-block-free-market"></div>
+    </div>
+    <div class="flex flex-col-reverse md:flex md:flex-row-reverse md:mt-8 gap-7">
+      <ul role="list" class="flex w-full gap-10 flex-col font-['Inter'] font-medium text-dark">
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text6 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text7 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text8 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text9 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text10 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text11 }}</li>
+      </ul>
+      <div class="w-full bg-block"></div>
+    </div>
+    <div class="flex flex-col-reverse md:flex md:flex-row md:mt-8 gap-7">
+      <ul role="list" class="flex w-full gap-10 flex-col font-['Inter'] font-medium text-dark">
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text12 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text13 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text14 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text15 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text16 }}</li>
+        <li class="relative pl-6 lg:pl-0 main__li">{{ text17 }}</li>
+      </ul>
+      <div class="w-full bg-block"></div>
+    </div>
+    <!-- <h2 class="pt-10 text-xl font-medium text-left font-body md:text-xl">
+      <svg class="inline-block" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle opacity="0.2" cx="19" cy="19" r="19" fill="#007BFF" />
+        <path
+          d="M13.5817 26V24.0966L18.6314 19.1463C19.1143 18.6586 19.5168 18.2254 19.8388 17.8466C20.1607 17.4678 20.4022 17.1009 20.5632 16.7457C20.7242 16.3906 20.8047 16.0118 20.8047 15.6094C20.8047 15.1501 20.7005 14.7571 20.4922 14.4304C20.2839 14.099 19.9974 13.8433 19.6328 13.6634C19.2682 13.4834 18.8539 13.3935 18.3899 13.3935C17.9117 13.3935 17.4927 13.4929 17.1328 13.6918C16.773 13.8859 16.4936 14.1629 16.2947 14.5227C16.1006 14.8826 16.0036 15.3111 16.0036 15.8082H13.4964C13.4964 14.8849 13.7071 14.0824 14.1286 13.4006C14.55 12.7187 15.13 12.1908 15.8686 11.8168C16.612 11.4427 17.4643 11.2557 18.4254 11.2557C19.4008 11.2557 20.2578 11.438 20.9964 11.8026C21.7351 12.1671 22.308 12.6667 22.7152 13.3011C23.1271 13.9356 23.3331 14.66 23.3331 15.4744C23.3331 16.0189 23.2289 16.554 23.0206 17.0795C22.8123 17.6051 22.4453 18.1875 21.9197 18.8267C21.3989 19.4659 20.6674 20.2401 19.7251 21.1491L17.218 23.6989V23.7983H23.5533V26H13.5817Z"
+          fill="#007BFF" />
+      </svg>
+      Снабжение
+    </h2>
+    <p class="pt-8 text-base font-normal text-left whitespace-normal text-markerBlue font-body">Внедрение и
+      поставки по
+      графику компонентов
+      азиатских
+      производителей</p>
+    </div>
+    <hr class="my-5 text-center border lg:my-8 border-gray sm:mx-auto" />
+    <div class="flex flex-col justify-between md:flex-row">
+      <img src="/src/img/Truck.jpg" alt="Applications" class="object-left-bottom w-full md:w-1/2 rounded-2xl">
+      <div role="list" class="w-full  md:w-[300px] xl:w-[528px] md:pr-5  font-['Inter'] text-dark  text-left">
+        <p class="before:content-orangem before:top-[10px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Цифровой каталог с параметрическим поиском и кросс-референс
+        </p>
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Широкий охват по количеству категорий</p>
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          100+
+          производителей</p>
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Поставки образцов, отладочных плат и опытных партий</p>
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Техническая поддержка от команды инженеров</p>
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Поставки по графику и буферный склад</p>
+      </div>
+    </div>
+    <h2 class="pt-10 text-xl font-medium text-left font-body md:text-xl">
+      <svg class="inline-block" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle opacity="0.2" cx="19" cy="19" r="19" fill="#007BFF" />
+        <path
+          d="M18.4991 26.1989C17.4764 26.1989 16.5673 26.0237 15.7718 25.6733C14.9811 25.3229 14.3561 24.8352 13.8968 24.2102C13.4376 23.5852 13.1937 22.8632 13.1653 22.044H15.8358C15.8594 22.437 15.9896 22.7803 16.2264 23.0739C16.4631 23.3627 16.778 23.5876 17.171 23.7486C17.564 23.9096 18.0043 23.9901 18.492 23.9901C19.0128 23.9901 19.4745 23.9001 19.877 23.7202C20.2794 23.5355 20.5943 23.2798 20.8216 22.9531C21.0488 22.6264 21.1601 22.25 21.1554 21.8239C21.1601 21.3835 21.0465 20.9953 20.8145 20.6591C20.5824 20.3229 20.2463 20.0601 19.8059 19.8707C19.3703 19.6813 18.8448 19.5866 18.2292 19.5866H16.9437V17.5554H18.2292C18.7359 17.5554 19.1786 17.4678 19.5574 17.2926C19.9409 17.1174 20.2415 16.8712 20.4593 16.554C20.6771 16.232 20.7837 15.8603 20.7789 15.4389C20.7837 15.027 20.6913 14.6695 20.502 14.3665C20.3173 14.0587 20.0545 13.8196 19.7136 13.6491C19.3774 13.4787 18.9821 13.3935 18.5275 13.3935C18.0824 13.3935 17.6705 13.474 17.2917 13.6349C16.9129 13.7959 16.6075 14.0256 16.3755 14.3239C16.1435 14.6174 16.0204 14.9678 16.0062 15.375H13.4707C13.4896 14.5606 13.724 13.8456 14.1738 13.2301C14.6284 12.6098 15.2344 12.1269 15.992 11.7812C16.7496 11.4309 17.5995 11.2557 18.5417 11.2557C19.5124 11.2557 20.3552 11.438 21.0701 11.8026C21.7898 12.1624 22.3462 12.6477 22.7392 13.2585C23.1322 13.8693 23.3287 14.544 23.3287 15.2827C23.3334 16.1018 23.0919 16.7884 22.6042 17.3423C22.1213 17.8963 21.4868 18.2585 20.7008 18.429V18.5426C21.7235 18.6847 22.5072 19.0634 23.0517 19.679C23.6009 20.2898 23.8732 21.0497 23.8684 21.9588C23.8684 22.7732 23.6364 23.5024 23.1724 24.1463C22.7131 24.7855 22.0787 25.2874 21.269 25.652C20.4641 26.0166 19.5408 26.1989 18.4991 26.1989Z"
+          fill="#007BFF" />
+      </svg>
+      Логистический канал
+    </h2>
+    <p class="pt-8 text-base font-normal text-left whitespace-normal text-markerBlue font-body">Поставки под ключ
+      от азиатского источника</p>
+    </div>
+    <hr class="my-5 text-center border lg:my-8 border-gray sm:mx-auto" />
+    <div class="flex flex-col-reverse justify-between md:flex-row">
+      <div role="list" class="w-full md:w-[300px] xl:w-[528px] md:pl-5  font-['Inter'] text-dark  text-left">
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Логистический сервис с пониженным коэффициентом доставки</p>
+        <p class="before:content-orangem before:top-[40px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Размещение заказа, контроль отгрузки, промежуточный контроль, доставка, импорт и международные расчеты силами
+          Стримпартс</p>
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Клиентская поддержка и выделенный импорт-менеджер
+        </p>
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Отслеживание заказов онлайн
+        </p>
+        <p class="before:content-orangem before:top-[2px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          20-летний опыт трансграничной торговли
+        </p>
+        <p class="before:content-orangem before:top-[10px] before:relative pb-6 md:mb-10 lg:mb-5 text-base font-medium">
+          Партнерские программы с представителями азиатских производителей в РФ
+        </p>
+      </div>
+      <img src="/src/img/StreamParstscont.jpg" alt="Applications" class="object-left-bottom w-full md:w-1/2 rounded-2xl">
+    </div> -->
   </div>
-  <div class="flex flex-col md:flex-row justify-between mx-auto max-w-[600px]" data-aos="zoom-in">
-    <ul class="list-outside list-disc marker:text-blue font-light text-2xl sm:text-3xl pl-10 mb-4 md:mb-8">
-      <li>{{ text1 }}</li>
-      <li>{{ text2 }}</li>
-      <li>{{ text3 }}</li>
-    </ul>
-    <ul class="list-outside list-disc marker:text-blue font-light text-2xl sm:text-3xl pl-10 mb-4 md:mb-8">
-      <li>{{ text4 }}</li>
-      <li>{{ text5 }}</li>
-      <li>{{ text6 }}</li>
-    </ul>
-  </div>
-  <img src="/src/img/applications_1.png"
-       alt="Applications"
-       data-aos="zoom-in"
-       data-aos-offset="350"
-       class="mx-auto max-w-[100%] sm:max-w-[70%] relative top-[0px] md:top-[20px] xl:top-[-50px] 2xl:top-[-100px] 3xl:top-[-140px] xl:left-[50px] 2xl:left-[30px]">
-  <p class="mb-4 text-blue text-2xl sm:text-3xl font-medium text-blue text-center mt-20 xl:-mt-2 2xl:-mt-12" data-aos="zoom-in">
-    {{ text7 }}
-  </p>
-  <p class="text-center font-light text-2xl sm:text-3xl" data-aos="zoom-in">
-    {{ text8 }}
-  </p>
 </section>

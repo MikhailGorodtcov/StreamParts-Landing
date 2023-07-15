@@ -1,0 +1,52 @@
+<div class="flex items-center justify-between py-4 md:py-[12px]">
+  <div class="md:w-[140px]">
+    <a href="/">
+      <img src="./img/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <!-- Тут использую div и развожу flex кнопку войти и ссылки навгации
+  добавляю gap что бы разделить разные блоки
+  -->
+  <div class="flex items-center gap-[64px]">
+    <ul id="menu" class="relative lg:flex gap-10 hidden font-body">
+      <li>
+        <a href="./index.html" class="text-orange"> {{ link1.text }} </a>
+      </li>
+      <li>
+        <a href="./aboutcompany.html" class="text-dark"> {{ link2.text }} </a>
+      </li>
+      <!-- Добавил линию прямую  -->
+      <div class="absolute h-[32px] right-[-32px] w-[1px] bg-[#EDEDED]"></div>
+    </ul>
+
+    <!-- Тут создаю отдельный див для кнопкой регистрации и ссылки также использую flex  -->
+    <ul class="flex items-center justify-between gap-8 font-body">
+      <!-- Тут скрываю ссылку на экранах ниже sm-{640px} и показываю если выше  -->
+      <li class="md:block before:top-[2px] before:relative hidden text-sm font-normal  before:content-arrow">
+        <a href="{{ link3.url }}">{{ link3.text }} </a>
+      </li>
+      <li class="ml-[28px] md:ml-0">
+        <a href="https://app.streamparts.ru/login"
+          class="inline-block text-center px-3.5 py-2 text-sm font-normal  rounded-lg bg-blue text-white">
+          Войти
+        </a>
+      </li>
+      <!-- тут бургер меню  его скрываем но показываем при разрешении до 768px -->
+      <li class="lg:hidden flex">
+        <div id="menu-burger">
+          <button class="rounded-md">
+            <svg class="items-center p-0 text-gray-700 dark:text-gray-300" width="26" height="26" viewBox="0 0 26 26"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.99609 6.99777H22.0036" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M18.0019 13.0002H3.99609" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M3.99609 19.0026H14.0003" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
