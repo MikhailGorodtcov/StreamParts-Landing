@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <include
-    src="src/partials/components/Head/head.html"
-    locals='{"title":{"title": "Главная"}}'
-  ></include>
+<include src="src/partials/components/Head/head.html" locals='{"title":{"title": "Главная"}}'></include>
 
-  <body class="mx-auto font-body text-dark">
-    <div class="max-w-[1220px] px-[30px] mx-auto">
-      <!-- тут мы импортируем header  в котором лежит nav ссылки -->
-      <include src="src/partials/components/Header/header.html"></include>
-    </div>
-    <include
-      src="src/partials/components/Main/main.html"
-      locals='{
+<body class="mx-auto font-body text-dark">
+  <div class="max-w-[1220px] px-[30px] mx-auto">
+    <!-- тут мы импортируем header  в котором лежит nav ссылки -->
+    <include src="src/partials/components/Header/header.html"></include>
+  </div>
+  <include src="src/partials/components/Main/main.html" locals='{
     "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
     "link2": {"text": "Войти", "url": "#enter"},
     "link3": {"text": "Получить доступ", "url": "#access"}
-}'
-    >
-    </include>
-    <include
-      src="src/partials/components/About/about.html"
-      locals="{
-      }"
-    >
-    </include>
-    <include
-      src="src/partials/applications.html"
-      locals='{
+}'>
+  </include>
+  <include src="src/partials/components/About/about.html" locals="{
+      }">
+  </include>
+  <include src="src/partials/applications.html" locals='{
           "heading": "Направление поставок",
           "text1": "Складское наличие от категорий поставщиков: Производители, Глобальные и региональные дистрибуторы, Реселлеры (Китайский производственный запас)",
           "text2": "Входной контроль на промежуточном складе в г. Шэньчжэнь Рентген и функциональные испытания по запросу ",
@@ -46,25 +35,21 @@
           "text15": "Отслеживание заказов онлайн",
           "text16": "20-летний опыт трансграничной торговли",
           "text17": "Партнерские программы с представителями азиатских производителей в РФ"
-      }'
-    >
-    </include>
-    <include
-      src="src/partials/ecosystem.html"
-      locals='{
+      }'>
+  </include>
+  <include src="src/partials/ecosystem.html" locals='{
           "heading": "Ecosystem",
           "text1": "An ecosystem to support the whole customer idea-to-product cycle:",
           "text2": "Technical sales rep company",
           "text3": "Design house and EMS-operator",
           "text4": "Supply chain company and e-commerce platform"
-      }'
-    >
-    </include>
-    <!-- <include src="src/partials/aboutcompany.html" locals='{
+      }'>
+  </include>
+  <!-- <include src="src/partials/aboutcompany.html" locals='{
           "heading": "Linecard"
       }'>
   </include> -->
-    <!-- <include src="src/partials/activities.html" locals='{
+  <!-- <include src="src/partials/activities.html" locals='{
           "heading": "Activities",
           "text1": "Engineering",
           "text2": "Technical implementation, online and offline sales",
@@ -84,16 +69,17 @@
           "text16": "Knowledge base maintenance and development: block diagrams, product roadmaps, cross-references, technology insights"
       }'>
   </include> -->
-    <include src="src/partials/contacts.html"></include>
+  <include src="src/partials/contacts.html"></include>
 
-    <!-- <include src="src/partials/company.html" locals='{
+  <!-- <include src="src/partials/company.html" locals='{
 
   }'>
   </include> -->
-    <!-- <script type="module" src="js/index.js"></script>
+  <!-- <script type="module" src="js/index.js"></script>
 </body>
 
 </html> -->
-    <script type="module" src="js/Tabs.js"></script>
-  </body>
+  <script type="module" src="js/Tabs.js"></script>
+</body>
+
 </html>
