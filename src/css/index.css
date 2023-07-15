@@ -75,12 +75,11 @@ ul li.main__li::before {
 
 /*Tabs */
 
-.list {
-  border: 1px solid #e6e6e6;
-}
 .tab {
   display: flex;
   gap: 4px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
 }
 
 .tablinks {
@@ -106,16 +105,13 @@ ul li.main__li::before {
 .active {
   opacity: 1;
   position: static;
-  /* background-color: #007bff; */
-  background-color: #ff5c00;
-  color: white;
+  color: black;
   transform: translateX(0);
 }
-.active-tab {
-  background-color: #000;
-}
-.active-tab-open {
-  background-color: white;
+.active__link {
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
 }
 
 .modal__overlay {

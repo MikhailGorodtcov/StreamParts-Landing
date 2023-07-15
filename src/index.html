@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
   <include
-    src="src/partials/components/Head/head.html"
+    src="src/components/Head/head.html"
     locals='{"title":{"title": "Главная"}}'
   ></include>
-
   <body class="mx-auto font-body text-dark">
     <div class="max-w-[1220px] px-[30px] mx-auto">
-      <!-- тут мы импортируем header  в котором лежит nav ссылки -->
-      <include src="src/partials/components/Header/header.html"></include>
+      <!-- Header -->
+      <include src="src/components/Header/header.html"></include>
     </div>
+    <!-- Компонент Главная -->
     <include
-      src="src/partials/components/Main/main.html"
+      src="src/components/Main/main.html"
       locals='{
     "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
-    "link2": {"text": "Войти", "url": "#enter"},
-    "link3": {"text": "Получить доступ", "url": "#access"}
+    "link2": {"text": "Войти"},
+    "link3": {"text": "Получить доступ"}
 }'
     >
     </include>
+    <!-- Компонент О нас -->
+    <include src="src/components/About/about.html"></include>
     <include
-      src="src/partials/components/About/about.html"
-      locals="{
-      }"
-    >
-    </include>
-    <include
-      src="src/partials/applications.html"
+      src="src/components/Applications/applications.html"
       locals='{
           "heading": "Направление поставок",
           "text1": "Складское наличие от категорий поставщиков: Производители, Глобальные и региональные дистрибуторы, Реселлеры (Китайский производственный запас)",
@@ -49,22 +45,11 @@
       }'
     >
     </include>
+    <!-- Tabs -->
+    <include src="src/components/Tabs/Tabs.html"></include>
     <include
-      src="src/partials/ecosystem.html"
+      src="src/components/Activities/activities.html"
       locals='{
-          "heading": "Ecosystem",
-          "text1": "An ecosystem to support the whole customer idea-to-product cycle:",
-          "text2": "Technical sales rep company",
-          "text3": "Design house and EMS-operator",
-          "text4": "Supply chain company and e-commerce platform"
-      }'
-    >
-    </include>
-    <!-- <include src="src/partials/aboutcompany.html" locals='{
-          "heading": "Linecard"
-      }'>
-  </include> -->
-    <!-- <include src="src/partials/activities.html" locals='{
           "heading": "Activities",
           "text1": "Engineering",
           "text2": "Technical implementation, online and offline sales",
@@ -82,18 +67,12 @@
           "text14": "IT",
           "text15": "Electronic components database maintenance and development",
           "text16": "Knowledge base maintenance and development: block diagrams, product roadmaps, cross-references, technology insights"
-      }'>
-  </include> -->
-    <include src="src/partials/contacts.html"></include>
-
-    <!-- <include src="src/partials/company.html" locals='{
-
-  }'>
-  </include> -->
-    <!-- <script type="module" src="js/index.js"></script>
-</body>
-
-</html> -->
+      }'
+    >
+    </include>
+    <!-- Footer -->
+    <include src="src/components/Footer/footer.html"></include>
+    <!-- Tabs js example -->
     <script type="module" src="js/Tabs.js"></script>
   </body>
 </html>

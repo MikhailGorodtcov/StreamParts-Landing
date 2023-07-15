@@ -1,12 +1,15 @@
 <header class="relative">
-  <include src="src/partials/components/Nav/nav.html" locals='{
+  <include
+    src="src/components/Nav/nav.html"
+    locals='{
         "link1": {"text": "Главная", "url": "#home"},
         "link2": {"text": "О компании", "url": "#aboutcompany"},
         "link3": {"text": "Получить доступ", "url": "#access"},
         "link4": {"text": "Войти", "url": "#enter"},
         "enActiveClass": "text-white",
         "cnActiveClass": ""
-    }'>
+    }'
+  >
   </include>
   <!-- Добавил подчеркивание  нижнее -->
   <div class="absolute w-full h-[1px] bg-[#EDEDED]"></div>
