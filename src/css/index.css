@@ -65,6 +65,18 @@ ul li.main__li::before {
   height: 420px;
 }
 
+.bg-block2 {
+  background: url("../Truck.579aaa3d.jpg") no-repeat;
+  width: 100%;
+  height: 420px;
+}
+
+.bg-block3 {
+  background: url("../StreamParstscont.b1f80bdb.jpg") no-repeat;
+  width: 100%;
+  height: 420px;
+}
+
 @media screen and (max-width: 1024px) {
   ul li.main__li::before {
     left: 0px;
