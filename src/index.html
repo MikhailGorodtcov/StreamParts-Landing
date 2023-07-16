@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <include
-    src="src/components/Head/head.html"
-    locals='{"title":{"title": "Главная"}}'
-  ></include>
-  <body class="mx-auto font-body text-dark">
-    <div class="max-w-[1220px] px-[30px] mx-auto">
-      <!-- Header -->
-      <include src="src/components/Header/header.html"></include>
-    </div>
-    <!-- Компонент Главная -->
-    <include
-      src="src/components/Main/main.html"
-      locals='{
+<include src="src/components/Head/head.html" locals='{"title":{"title": "Главная"}}'></include>
+
+<body class="mx-auto font-body text-dark">
+  <div class="max-w-[1220px] px-[30px] mx-auto">
+    <!-- Header -->
+    <include src="./src/components/Header/header.html"></include>
+  </div>
+  <!-- Компонент Главная -->
+  <include src="src/components/Main/main.html" locals='{
     "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
     "link2": {"text": "Войти"},
     "link3": {"text": "Получить доступ"}
-}'
-    >
-    </include>
-    <!-- Компонент О нас -->
-    <include src="src/components/About/about.html"></include>
-    <include
-      src="src/components/Applications/applications.html"
-      locals='{
+}'>
+  </include>
+  <!-- Компонент О нас -->
+  <include src="src/components/About/about.html"></include>
+  <include src="src/components/Applications/applications.html" locals='{
           "heading": "Направление поставок",
           "text1": "Складское наличие от категорий поставщиков: Производители, Глобальные и региональные дистрибуторы, Реселлеры (Китайский производственный запас)",
           "text2": "Входной контроль на промежуточном складе в г. Шэньчжэнь Рентген и функциональные испытания по запросу ",
@@ -42,14 +35,11 @@
           "text15": "Отслеживание заказов онлайн",
           "text16": "20-летний опыт трансграничной торговли",
           "text17": "Партнерские программы с представителями азиатских производителей в РФ"
-      }'
-    >
-    </include>
-    <!-- Tabs -->
-    <include src="src/components/Tabs/Tabs.html"></include>
-    <include
-      src="src/components/Activities/activities.html"
-      locals='{
+      }'>
+  </include>
+  <!-- Tabs -->
+  <include src="src/components/Tabs/Tabs.html"></include>
+  <!-- <include src="src/components/Activities/activities.html" locals='{
           "heading": "Activities",
           "text1": "Engineering",
           "text2": "Technical implementation, online and offline sales",
@@ -67,12 +57,12 @@
           "text14": "IT",
           "text15": "Electronic components database maintenance and development",
           "text16": "Knowledge base maintenance and development: block diagrams, product roadmaps, cross-references, technology insights"
-      }'
-    >
-    </include>
-    <!-- Footer -->
-    <include src="src/components/Footer/footer.html"></include>
-    <!-- Tabs js example -->
-    <script type="module" src="js/Tabs.js"></script>
-  </body>
+      }'>
+  </include> -->
+  <!-- Footer -->
+  <include src="src/components/Footer/footer.html"></include>
+  <!-- Tabs js example -->
+  <script type="module" src="js/Tabs.js"></script>
+</body>
+
 </html>
