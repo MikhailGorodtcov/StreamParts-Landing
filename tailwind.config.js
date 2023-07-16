@@ -67,6 +67,9 @@ module.exports = {
       morewhite: 'url("/src/img/icon/morewhite.svg")',
       markerb: 'url("/src/img/icon/markerb.svg")',
       orangem: 'url("/src/img/icon/orange.svg")',
+      number1: 'url("/src/img/icon/freemarket1.svg")',
+      number2: 'url("/src/img/icon/provision2.svg")',
+      number3: 'url("/src/img/icon/logisticschannel.svg")',
     },
     fontFamily: {
       body: ["Inter", "sans-serif"],
