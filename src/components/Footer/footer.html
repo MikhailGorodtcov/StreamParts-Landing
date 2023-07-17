@@ -1,6 +1,6 @@
-<footer class="shadow bg-dark">
-  <div class="max-w-[1220px] px-[30px] mx-auto md:pt-[22px] md:pb-[32px]">
-    <div class="relative flex items-center justify-between md:pb-4">
+<footer class="shadow bg-dark ">
+  <div class="max-w-[1220px] px-[30px] mx-auto pt-[22px] pb-[32px]">
+    <div class="relative flex items-center justify-between pb-4">
       <div class="md:w-[140px]">
         <a href="/">
           <img src="./img/logofooter.svg" alt="logo" />
@@ -9,7 +9,7 @@
       <!-- Тут использую div и развожу flex кнопку войти и ссылки навгации
       добавляю gap что бы разделить разные блоки
       -->
-      <div class="flex items-center gap-[64px]">
+      <div class="flex items-start md:items-center gap-[64px]">
         <ul id="menu" class="relative hidden gap-10 lg:flex font-body">
           <li>
             <a href="./index.html" class="text-markerBlue">Главная</a>
@@ -80,8 +80,8 @@
       </div>
       <div class="h-[1px] w-full bg-[#262626] absolute bottom-0"></div>
     </div>
-    <div class="flex flex-wrap justify-between md:pt-6">
-      <div class="flex items-center gap-8">
+    <div class="flex flex-col justify-start gap-6 py-5 md:gap-0 lg:justify-between md:py-0 lg:flex-row lg:pt-6">
+      <div class="flex flex-col items-start gap-8 md:items-center md:flex-row">
         <div class="text-sm text-white sm:text-center">
           <a href="#" class="hover:text-blue">© 2019 - 2023 Стримпартс</a>
         </div>
@@ -92,7 +92,7 @@
           <a href="#" class="hover:text-blue">Политика обработки данных</a>
         </div>
       </div>
-      <div class="flex items-center gap-6">
+      <div class="flex flex-col items-start gap-6 md:items-center md:flex-row">
         <div class="flex items-center gap-3 text-sm text-white sm:text-center">
           <svg
             class="inline-block align-baseline"
