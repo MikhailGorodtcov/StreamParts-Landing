@@ -12,6 +12,7 @@
     for (let tab of tabs) {
       tab.classList.remove("active__link");
     }
+    // что это такое ? 
     let colors;
     if (event.code === 'Tab') {
       if (bodyType.style.background === '') {

@@ -1,16 +1,64 @@
 <header class="relative">
-  <include
-    src="src/components/Nav/nav.html"
-    locals='{
-        "link1": {"text": "Главная", "url": "#home"},
-        "link2": {"text": "О компании", "url": "#aboutcompany"},
-        "link3": {"text": "Получить доступ", "url": "#access"},
-        "link4": {"text": "Войти", "url": "#enter"},
-        "enActiveClass": "text-white",
-        "cnActiveClass": ""
-    }'
-  >
-  </include>
+  <div class="flex items-center justify-between py-4 md:py-[12px]">
+    <div class="md:w-[140px]">
+      <a href="/">
+        <img src="./img/logo.svg" alt="logo" />
+      </a>
+    </div>
+    <!-- Тут использую div и развожу flex кнопку войти и ссылки навгации
+    добавляю gap что бы разделить разные блоки
+    -->
+    <div class="flex items-center gap-[64px]">
+      <ul id="menu" class="relative hidden gap-10 xl:flex font-body">
+        <li>
+          <a
+            href="./index.html"
+            class="{{ if (currentPage === 'Главная'){ 'text-orange' } }}"
+          >
+            Главная</a
+          >
+        </li>
+        <li>
+          <a
+            href="./aboutcompany.html"
+            class="{{ if (currentPage === 'О компании'){ 'text-orange' } }}"
+          >
+            О компании</a
+          >
+        </li>
+        <!-- Добавил линию прямую  -->
+        <div class="absolute h-[32px] right-[-32px] w-[1px] bg-[#EDEDED]"></div>
+      </ul>
+
+      <!-- Тут создаю отдельный див для кнопкой регистрации и ссылки также использую flex  -->
+      <ul class="flex items-center justify-between gap-8 font-body">
+        <!-- Тут скрываю ссылку на экранах ниже sm-{640px} и показываю если выше  -->
+        <li
+          class="sm:block before:top-[2px] before:relative hidden text-sm font-normal before:content-arrow"
+        >
+          <a href="#">Получить доступ</a>
+        </li>
+        <li class="ml-[28px] md:ml-0">
+          <a
+            href="https://app.streamparts.ru/login"
+            class="inline-block text-center px-3.5 py-2 text-sm font-normal rounded-lg bg-blue text-white"
+          >
+            Войти
+          </a>
+        </li>
+        <!-- тут бургер меню  его скрываем но показываем при разрешении до 768px -->
+        <li class="flex lg:hidden">
+          <div id="menu-burger">
+            <button class="rounded-md">
+              <!-- Svg вставил нормально  -->
+              <img src="./img/icon/burger.svg" alt="menu" />
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <!-- Добавил подчеркивание  нижнее -->
   <div class="absolute w-full h-[1px] bg-[#EDEDED]"></div>
 </header>
