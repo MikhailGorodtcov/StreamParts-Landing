@@ -1,132 +1,170 @@
-<div class="tab-content border border-gray">
+<div class="border tab-content border-gray rounded-b-xl">
   <!-- tabs 1 -->
-  <div class="active tab-content__item">
-    <div class="flex flex-row-reverse flex-wrap justify-between" id="first" role="tabpanel" aria-labelledby="first-tab"
-      data-te-tab-activ>
-      <img class="w-[50%] object-cover" src="/src/img/tabs12.png" alt="Поисковый агрегатор" />
-      <div class="flex flex-col justify-center">
-        <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
-          50 + источников в поисковой выдаче
-        </p>
-        <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
-          Опции из складского наличия и размещение в производство
-        </p>
-        <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
-          Анализ доступности компонента
-        </p>
-        <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
-          Построчный поиск и списком &#40;загрузка BOM&#41;
-        </p>
-        <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
-          Кросс-референс аналоги
-        </p>
-        <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
-          Аналоги по типу упаковки
-        </p>
-        <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium">
-          Сохранение результатов поиска в корзине<br />
-          &#40;либо пуле корзин &#40;проект/заказ/клиент&#41;
-        </p>
-        <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base text-markerBlue font-medium">
-          Динамическое обновление корзины
-        </p>
-      </div>
+  <!-- убрал все лишние паддинги  вывел список  как нужно на 1 слайде -->
+  <div class="active flex flex-col md:flex-row md:py-[52px] items-center md:px-6 tab-content__item">
+    <!-- Список -->
+    <ul class="flex w-full md:max-w-[50%] pl-6 py-4 flex-col gap-5 justify-center">
+      <li
+        class="before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+        50 + источников в поисковой выдаче
+      </li>
+      <li
+        class="before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+        Опции из складского наличия и размещение в производство
+      </li>
+      <li
+        class="before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+        Анализ доступности компонента
+      </li>
+      <li
+        class="before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+        Построчный поиск и списком &#40;загрузка BOM&#41;
+      </li>
+      <li
+        class="before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+        Кросс-референс аналоги
+      </li>
+      <li
+        class="before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+        Аналоги по типу упаковки
+      </li>
+      <li
+        class="before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium">
+        Сохранение результатов поиска в корзине<br />
+        &#40;либо пуле корзин &#40;проект/заказ/клиент&#41;
+      </li>
+      <li class="before:content-markerb before:top-[2px] before:relative text-base text-markerBlue font-medium">
+        Динамическое обновление корзины
+      </li>
+    </ul>
+    <div class=" w-full md:max-w-[50%]">
+      <img src="/src/img/tabs12.png" alt="Поисковый агрегатор" />
     </div>
-  </div>
-  <!-- tabs 2 -->
-  <div class="tab-content__item">
-    <div class="flex flex-row justify-between data-[te-tab-active]:block" data-target="second" data-te-tab-activ>
-      <img class="w-[50%] object-cover" src="/src/img/tabs2.jpg" alt="Каталог азиатских проивзодителей" />
+
+    <!-- tabs 2 -->
+    <!-- <div class="tab-content__item">
+    <div
+      class="flex flex-row justify-between data-[te-tab-active]:block"
+      data-target="second"
+      data-te-tab-activ
+    >
+      <img
+        class="w-[50%] object-cover"
+        src="/src/img/tabs2.jpg"
+        alt="Каталог азиатских проивзодителей"
+      />
       <div class="flex flex-col justify-center">
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Параметрический поиск
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Текстовый поиск среди результатов категории
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium">
-          Кросс-референс аналоги к западным компонентам
-          (pin2pin, функциональные)
+          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
+          Кросс-референс аналоги к западным компонентам (pin2pin,
+          функциональные)
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Техническая документация онлайн и ссылки для скачивания
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Создание запроса
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[2px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Проверка на складское наличие компонента
         </p>
       </div>
     </div>
-  </div>
-  <!-- tabs 3 -->
-  <div class="tab-content__item">
-    <div class="flex flex-row-reverse justify-between data-[te-tab-active]:block" data-target="third">
-      <img class="w-[50%] object-cover" src="/src/img/tabs3.jpg" alt="Система обработки запросов" />
+  </div> -->
+    <!-- tabs 3-->
+    <!-- <div class="tab-content__item">
+    <div
+      class="flex flex-row-reverse justify-between data-[te-tab-active]:block"
+      data-target="third"
+    >
+      <img
+        class="w-[50%] object-cover"
+        src="/src/img/tabs3.jpg"
+        alt="Система обработки запросов"
+      />
       <div class="flex flex-col justify-center">
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Дополнительные источники складского наличия в Китае
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Потенциал улучшения цены на чеки от 5000 USD или эквивалент
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Повторяющийся запрос о поступлении на склад
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium">
-          Расчет поставки от иностранного источника
-          (заказная поставка)
+          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
+          Расчет поставки от иностранного источника (заказная поставка)
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Срок квотации 12 - 24 часов
         </p>
       </div>
     </div>
-  </div>
-  <!-- tabs 4 -->
-  <div class="tab-content__item">
-    <div class="flex flex-row justify-between data-[te-tab-active]:block" id="fourth" role="tabpanel"
-      aria-labelledby="fourth-tab">
-      <img class="w-[50%] object-cover" src="/src/img/tabs3.jpg" alt="Журнал заказов" />
+  </div> -->
+
+    <!-- tabs 4 -->
+    <!-- <div class="tab-content__item">
+    <div
+      class="flex flex-row justify-between data-[te-tab-active]:block"
+      id="fourth"
+      role="tabpanel"
+      aria-labelledby="fourth-tab"
+    >
+      <img
+        class="w-[50%] object-cover"
+        src="/src/img/tabs3.jpg"
+        alt="Журнал заказов"
+      />
       <div class="flex flex-col justify-center">
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Отслеживание статусов размещенных заказов
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Динамическая ожидаемая дата поставки
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[1px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Выставленные счета и статус оплаты
         </p>
         <p
-          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium">
+          class="pl-[52px] pb-5 before:content-markerb before:top-[10px] before:relative text-base leading-6 text-markerBlue font-medium"
+        >
           Просматриваемость заказов подчиненных аккаунтов
         </p>
       </div>
     </div>
+  </div> -->
   </div>
-</div>
 </div>
