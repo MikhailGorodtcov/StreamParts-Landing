@@ -10,25 +10,24 @@
     -->
     <div class="flex items-center gap-[64px]">
       <ul id="menu" class="relative hidden gap-10 xl:flex font-body">
-        <li>
+        <li class="cursor-pointer">
           <a href="./index.html" class="{{ if (currentPage === 'Главная'){ 'text-orange' } }}">
             Главная</a>
         </li>
-        <li>
+        <li class="cursor-pointer">
           <a href="./aboutcompany.html" class="{{ if (currentPage === 'О компании'){ 'text-orange' } }}">
             О компании</a>
         </li>
         <!-- Добавил линию прямую  -->
         <div class="absolute h-[32px] right-[-32px] w-[1px] bg-[#EDEDED]"></div>
       </ul>
-
       <!-- Тут создаю отдельный див для кнопкой регистрации и ссылки также использую flex  -->
       <ul class="flex items-center justify-between gap-8 font-body">
         <!-- Тут скрываю ссылку на экранах ниже sm-{640px} и показываю если выше  -->
         <li class="sm:block before:top-[2px] before:relative hidden text-sm font-normal before:content-arrow">
           <a href="#">Получить доступ</a>
         </li>
-        <li class="ml-[28px] md:ml-0">
+        <li class="ml-[28px] hover:opacity-90 cursor-pointer md:ml-0">
           <a href="https://app.streamparts.ru/login"
             class="inline-block text-center px-3.5 py-2 text-sm font-normal rounded-lg bg-blue text-white">
             Войти

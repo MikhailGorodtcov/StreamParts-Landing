@@ -33,12 +33,6 @@ module.exports = {
         mxlg: "202px",
       },
       fontFamily: {
-        // sans: [
-        //   'SF Pro Display',
-        //   'SF Pro Text',
-        //   'system-ui',
-        //   '-apple-system',
-        // ],
         pro: "SF Pro Display",
         protext: "SF Pro Text",
         mono: "Roboto Mono, sans-serif",
