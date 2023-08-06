@@ -1,0 +1,181 @@
+<footer class="shadow bg-dark ">
+  <div class="max-w-[1220px] px-[30px] mx-auto pt-[22px] pb-[32px]">
+    <div class="relative flex items-center justify-between pb-4">
+      <div class="md:w-[140px]">
+        <a href="/">
+          <img src="./img/logofooter.svg" alt="logo" />
+        </a>
+      </div>
+      <!-- Тут использую div и развожу flex кнопку войти и ссылки навгации
+      добавляю gap что бы разделить разные блоки
+      -->
+      <div class="flex items-start md:items-center gap-[64px]">
+        <ul id="menu" class="relative hidden gap-10 lg:flex font-body">
+          <li>
+            <a href="./index.html" class="text-markerBlue">Главная</a>
+          </li>
+          <li>
+            <a href="./aboutcompany.html" class="text-white">О компании</a>
+          </li>
+          <!-- Добавил линию прямую  -->
+          <div
+            class="absolute h-[32px] right-[-32px] w-[1px] bg-[#262626]"
+          ></div>
+        </ul>
+
+        <!-- Тут создаю отдельный див для кнопкой регистрации и ссылки также использую flex  -->
+        <ul class="flex items-center justify-between gap-8 font-body">
+          <!-- Тут скрываю ссылку на экранах ниже sm-{640px} и показываю если выше  -->
+          <li
+            class="md:block before:top-[2px] before:relative hidden text-sm text-white font-normal before:content-arrow"
+          >
+            <a href="#">Получить доступ</a>
+          </li>
+          <li class="ml-[28px] md:ml-0">
+            <a
+              href="https://app.streamparts.ru/login"
+              class="inline-block text-center px-3.5 py-2 text-sm font-normal rounded-lg bg-blue text-white"
+            >
+              Войти
+            </a>
+          </li>
+          <!-- тут бургер меню  его скрываем но показываем при разрешении до 768px -->
+          <li class="flex lg:hidden">
+            <div id="menu-burger">
+              <button class="rounded-md">
+                <svg
+                  class="items-center p-0 text-gray-700 dark:text-gray-300"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.99609 6.99777H22.0036"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.0019 13.0002H3.99609"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.99609 19.0026H14.0003"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="h-[1px] w-full bg-[#262626] absolute bottom-0"></div>
+    </div>
+    <div class="flex flex-col justify-start gap-6 py-5 md:gap-0 lg:justify-between md:py-0 lg:flex-row lg:pt-6">
+      <div class="flex flex-col items-start gap-8 md:items-center md:flex-row">
+        <div class="text-sm text-white sm:text-center">
+          <a href="#" class="hover:text-blue">© 2019 - 2023 Стримпартс</a>
+        </div>
+        <div class="text-sm text-white sm:text-center">
+          <a href="#" class="hover:text-blue">Правила сайта</a>
+        </div>
+        <div class="text-sm text-white sm:text-center">
+          <a href="#" class="hover:text-blue">Политика обработки данных</a>
+        </div>
+      </div>
+      <div class="flex flex-col items-start gap-6 md:items-center md:flex-row">
+        <div class="flex items-center gap-3 text-sm text-white sm:text-center">
+          <svg
+            class="inline-block align-baseline"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.04646 10.9533C8.07146 9.97831 7.33646 8.88664 6.84813 7.77914C6.7448 7.54497 6.80563 7.27081 6.98646 7.08997L7.66896 6.40831C8.22813 5.84914 8.22813 5.05831 7.7398 4.56997L6.76146 3.59164C6.11063 2.94081 5.05563 2.94081 4.4048 3.59164L3.86146 4.13497C3.24396 4.75247 2.98646 5.64331 3.15313 6.52664C3.5648 8.70414 4.8298 11.0883 6.87063 13.1291C8.91146 15.17 11.2956 16.435 13.4731 16.8466C14.3565 17.0133 15.2473 16.7558 15.8648 16.1383L16.4073 15.5958C17.0581 14.945 17.0581 13.89 16.4073 13.2391L15.4298 12.2616C14.9415 11.7733 14.1498 11.7733 13.6623 12.2616L12.9098 13.015C12.729 13.1958 12.4548 13.2566 12.2206 13.1533C11.1131 12.6641 10.0215 11.9283 9.04646 10.9533Z"
+              stroke="white"
+              stroke-opacity="0.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="#" class="hover:text-blue">+7 (812) 509-66-56</a>
+        </div>
+        <div class="flex items-center gap-3 text-sm text-white sm:text-center">
+          <svg
+            class="inline-block"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.24805 9.12427L9.68695 10.6279C10.4917 11.1241 11.5075 11.1241 12.3123 10.6279L14.7512 9.12427"
+              stroke="white"
+              stroke-opacity="0.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <rect
+              x="3.49805"
+              y="5.16431"
+              width="15.0062"
+              height="11.6715"
+              rx="3"
+              stroke="white"
+              stroke-opacity="0.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <a href="#" class="hover:text-blue">mailto:support@streamparts.ru</a>
+        </div>
+        <div class="flex items-center gap-3 text-sm text-white sm:text-center">
+          <svg
+            class="inline-block align-baseline"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 10.8333V10.8333C8.61917 10.8333 7.5 9.71408 7.5 8.33325V8.33325C7.5 6.95242 8.61917 5.83325 10 5.83325V5.83325C11.3808 5.83325 12.5 6.95242 12.5 8.33325V8.33325C12.5 9.71408 11.3808 10.8333 10 10.8333Z"
+              stroke="white"
+              stroke-opacity="0.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.99935 17.5C9.99935 17.5 4.16602 12.7083 4.16602 8.33333C4.16602 5.11167 6.77768 2.5 9.99935 2.5C13.221 2.5 15.8327 5.11167 15.8327 8.33333C15.8327 12.7083 9.99935 17.5 9.99935 17.5Z"
+              stroke="white"
+              stroke-opacity="0.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="#" class="hover:text-blue">Санкт-Петербург</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

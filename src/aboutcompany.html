@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<include src="./src/components/Head/head.html" locals='{"title":{"title": "О компании"}}'></include>
+
+<body class="mx-auto font-body text-dark">
+  <div class="max-w-[1220px] px-[30px] mx-auto">
+    <!-- тут мы импортируем header  в котором лежит nav ссылки -->
+    <include src="./src/components/Header/header.html" locals='{ "currentPage": "О компании" }'></include>
+    <main>
+      <!-- Блок about main -->
+      <include src="./src/components/AboutMain/aboutmain.html"></include>
+      <!-- Блок about Catalog  с синими карочками -->
+      <include src="./src/components/AboutCatalog/AboutCatalog.html"></include>
+      <div class="text-lg md:text-5xl font-pro">
+        Мы поддерживаем потребности внеплановой закупки и пополнения складского запаса, поставки образцов для
+        изготовления прототипов устройств, снабжаем промышленное производство
+      </div>
+      <!-- Блок about Cards  с белыми карочками -->
+      <include src="./src/components/AboutCards/aboutCards.html"></include>
+      <!-- Подключаем линк с карточками -->
+      <include src="src/components/OurGeography/OurGeography.html"></include>
+      <!-- Подключаем линк с формой -->
+      <include src="src/components/Form/form.html"></include>
+      <!-- Footer -->
+    </div>
+  </main>
+  <include src="./src/components/Footer/footer.html"></include>
+  </div>
+</body>
+
+</html>

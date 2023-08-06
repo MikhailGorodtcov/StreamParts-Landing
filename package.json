@@ -4,10 +4,10 @@
   "description": "streamparts-landing",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
-    "dev:parcel": "parcel ./src/404.html ./src/index.html --open",
+    "dev:parcel": "parcel  ./src/aboutcompany.html ./src/index.html --open",
     "dev:css": "tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --watch",
     "build": "npm-run-all build:css build:parcel",
-    "build:parcel": "parcel build ./src/404.html ./src/index.html",
+    "build:parcel": "parcel build  ./src/aboutcompany.html ./src/index.html",
     "build:css": "tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,7 @@
     "@parcel/packager-xml": "^2.4.2-nightly.2660",
     "@parcel/transformer-webmanifest": "^2.4.2-nightly.2660",
     "@parcel/transformer-xml": "^2.4.2-nightly.2660",
+    "@tailwindcss/typography": "^0.5.9",
     "parcel-reporter-static-files-copy": "^1.3.4",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.9"

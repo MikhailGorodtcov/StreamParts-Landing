@@ -1,88 +1,45 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
+<include src="./src/components/Head/head.html" locals='{"title":{"title": "Главная"}}'></include>
 
-<head>
-  <meta charset="utf-8">
-  <title>Test</title>
-  <meta name="description" content="Test">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta property="og:title" content="Test">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:description" content="Test">
-  <link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon-16x16.png">
-  <link rel="manifest" href="/src/site.webmanifest">
-  <link rel="mask-icon" href="/src/safari-pinned-tab.svg" color="#0087ef">
-  <meta name="apple-mobile-web-app-title" content="Test">
-  <meta name="application-name" content="Test">
-  <meta name="msapplication-config" content="browserconfig.xml" />
-  <meta name="theme-color" content="#0087EF">
-  <link rel="stylesheet" href="../dist/css/index.css">
-</head>
-
-<body class="font-body text-dark overflow-x-hidden">
-  <include src="src/partials/nav.html" locals='{
-          "link1": {"text": "Главная", "url": "#home"},
-          "link2": {"text": "Applications", "url": "#applications"},
-          "link3": {"text": "Ecosystem", "url": "#ecosystem"},
-          "link4": {"text": "Linecard", "url": "#linecard"},
-          "link5": {"text": "Activities", "url": "#activities"},
-          "link6": {"text": "Contacts", "url": "#contacts"},
-          "enActiveClass": "text-blue",
-          "cnActiveClass": ""
+<body class="mx-auto font-body text-dark">
+  <div class="max-w-[1220px] px-[30px] mx-auto">
+    <!-- Header -->
+    <include src="./src/components/Header/header.html" locals='{ "currentPage": "Главная" }'></include>
+  </div>
+  <!-- Компонент Главная -->
+  <include src="./src/components/Main/main.html" locals='{
+    "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
+    "link2": {"text": "Войти"},
+    "link3": {"text": "Получить доступ"}
+}'>
+  </include>
+  <!-- Компонент О нас -->
+  <include src="./src/components/About/about.html"></include>
+  <include src="./src/components/Applications/applications.html" locals='{
+          "heading": "Направление поставок",
+          "text1": "Складское наличие от категорий поставщиков: Производители, Глобальные и региональные дистрибуторы, Реселлеры (Китайский производственный запас)",
+          "text2": "Входной контроль на промежуточном складе в г. Шэньчжэнь Рентген и функциональные испытания по запросу ",
+          "text3": "Поиск компонентов, размещение и отслеживание заказов он-лайн",
+          "text4": "Партнерские программы с Российскими дистрибуторами",
+          "text5": "Срок поставки 4 - 6 недель",
+          "text6": "Цифровой каталог с параметрическим поиском и кросс-референс",
+          "text7": "Широкий охват по количеству категорий",
+          "text8": "100+ производителей",
+          "text9": "Поставки образцов, отладочных плат и опытных партий",
+          "text10": "Техническая поддержка от команды инженеров",
+          "text11": "Поставки по графику и буферный склад",
+          "text12": "Логистический сервис с пониженным коэффициентом доставки",
+          "text13": "Размещение заказа, контроль отгрузки, промежуточный контроль, доставка, импорт и международные расчеты силами Стримпартс",
+          "text14": "Клиентская поддержка и выделенный импорт-менеджер",
+          "text15": "Отслеживание заказов онлайн",
+          "text16": "20-летний опыт трансграничной торговли",
+          "text17": "Партнерские программы с представителями азиатских производителей в РФ"
       }'>
   </include>
-  <include src="src/partials/main.html" locals='{
-          "text1": "A technical sales rep company with deep expertise in semiconductor and wireless technologies",
-          "text2": "We develop engineering and supply chain ecosystem to support both manufacturers and customers with the most ambitious projects.",
-          "text3": "Our infrastructure is a 0 (zero) manufacturer\u0027s fixed cost to penetrate and develop EAEU market."
-      }'>
-  </include>
-  <div class="rounded-full bg-black"> 123</div>
-  <div class="rounded-full bg-orange text-white">233</div>
-  <include src="src/partials/about.html" locals='{
-          "heading": "About",
-          "text1": "500 existing customers",
-          "text2": "Manufacturer\u0027s product is a part of balanced solution for selected application",
-          "text3": "Skilled and trained engineers and sales work force",
-          "text4": "Strong background in technical implementation",
-          "text5": "Product share % increase in customer BOM",
-          "text6": "20 years experience in the electronic industry and logistics",
-          "text7": "Deep knowledge in taxation, tariff and non-tariff customs regulations",
-          "text8": "Internally developed e-commerce: online search, quotations and order tracking",
-          "text9": "Online catalogues",
-          "text10": "Cross-reference online match with competitor\u0027s products",
-          "text11": "Product indexation in russian search systems",
-          "text12": "Flexible Asia-EAEU supply chain"
-      }'>
-  </include>
-  <include src="src/partials/applications.html" locals='{
-          "heading": "Applications",
-          "text1": "Industrial",
-          "text2": "Consumer",
-          "text3": "Automotive",
-          "text4": "IoT",
-          "text5": "Computing",
-          "text6": "Communication",
-          "text7": "Eurasian Economy Union",
-          "text8": "Russia + Belarus + Kazakhstan + Armenia + Kyrgyzstan"
-      }'>
-  </include>
-  <include src="src/partials/ecosystem.html" locals='{
-          "heading": "Ecosystem",
-          "text1": "An ecosystem to support the whole customer idea-to-product cycle:",
-          "text2": "Technical sales rep company",
-          "text3": "Design house and EMS-operator",
-          "text4": "Supply chain company and e-commerce platform"
-      }'>
-  </include>
-  <include src="src/partials/linecard.html" locals='{
-          "heading": "Linecard"
-      }'>
-  </include>
-  <include src="src/partials/activities.html" locals='{
+  <!-- Tabs -->
+  <include src="./src/components/Tabs/Tabs.html"></include>
+  <!-- <include src="./src/components/Activities/activities.html" locals='{
           "heading": "Activities",
           "text1": "Engineering",
           "text2": "Technical implementation, online and offline sales",
@@ -101,28 +58,11 @@
           "text15": "Electronic components database maintenance and development",
           "text16": "Knowledge base maintenance and development: block diagrams, product roadmaps, cross-references, technology insights"
       }'>
-  </include>
-  <include src="src/partials/contacts.html" locals='{
-          "heading": "Contacts",
-          "text1": "Saint-Petersburg, Russia",
-          "text2": "FAE and sales office",
-          "text3": "+79959880778",
-          "text4": "+ 7 995 988 07 78",
-          "text5": "eaeu@repelectronics.org",
-          "text6": "Prague, Czech Republic",
-          "text7": "FAE and sales office",
-          "text8": "+420608140007",
-          "text9": "+ 420 608 140 007",
-          "text10": "eu@repelectronics.org",
-          "text11": "Guangzhou, China",
-          "text12": "FAE and purchasing hub",
-          "text13": "+86139226033699",
-          "text14": "+ 86 139 226 033 699",
-          "text15": "prc@repelectronics.org",
-          "text16": "© 2020-2022, Repelectronics"
-      }'>
-  </include>
-  <script type="module" src="js/index.js"></script>
+  </include> -->
+  <!-- Footer -->
+  <include src="./src/components/Footer/footer.html"></include>
+  <!-- Tabs js example -->
+  <script type="module" src="js/Tabs.js"></script>
 </body>
 
 </html>
